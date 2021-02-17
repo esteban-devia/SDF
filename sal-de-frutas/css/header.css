@@ -1,0 +1,1000 @@
+@font-face {
+    font-family: 'Swiss-BC';
+    src: url("fonts/Swiss721BT-BlackCondensed.ttf");
+}
+
+@font-face {
+    font-family: 'Swiss-M';
+    src: url("fonts/Swiss721BT-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Dinnex-L';
+    src: url("fonts/DINNEXTLTPRO-LIGHT-1.OTF");
+}
+
+@font-face {
+    font-family: 'Dinnex-R';
+    src: url("fonts/DINNEXTLTPRO-REGULAR_0.OTF");
+}
+
+@font-face {
+    font-family: 'Dinnex-M';
+    src: url("fonts/DINNEXTLTPRO-MEDIUM_0.OTF");
+}
+
+@font-face {
+    font-family: 'Dinnex-BC';
+    src: url("fonts/DINNEXTLTPRO-BOLDCONDENSED.OTF");
+}
+
+@font-face {
+    font-family: 'BebasN';
+    src: url("fonts/BebasNeue-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    height: auto;
+    background: url(../imgs/home/desck-bg.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.splash {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.splash img {
+    width: 23em;
+    height: auto;
+}
+
+a {
+    cursor: pointer;
+    text-underline-position: under;
+}
+
+.menu {
+    display: flex;
+    background: #051f4f;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 6.25em;
+    font-family: 'Swiss-BC';
+}
+
+.logo {
+    display: flex;
+}
+
+#tq-logo {
+    margin-right: 1.1em;
+}
+
+#sfl-logo {
+    padding: 0 0.8em;
+    border-left: 2px solid #ffffff;
+}
+
+.menu-list a {
+    font-size: 1.1em;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding: 1.1em 1.8em;
+}
+
+.menu-act {
+    border: 2px solid;
+    border-image-source: linear-gradient(0deg, rgba(209, 189, 111, 1) 10%, rgba(237, 236, 206, 1) 50%, rgba(217, 164, 54, 1) 85%);
+    border-image-slice: 1;
+}
+
+.registry {
+    display: flex;
+    align-items: center;
+    padding-top: 0.2em;
+}
+
+.social {
+    border-right: 2px solid #ffffff;
+    height: 1.3em;
+    padding: 0 1.1em;
+}
+
+.social img {
+    height: 1.3em;
+}
+
+.register {
+    font-size: 1.1em;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 1.1em;
+    border-right: 2px solid #ffffff;
+    letter-spacing: 2px;
+}
+
+.country {
+    font-size: 1.1em;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0 1.1em;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.country img {
+    margin-left: 0.5em;
+}
+
+.country-block-d {
+    display: none;
+    position: absolute;
+    top: 6.5em;
+    right: 5em;
+    background: #22223c;
+    border-radius: 0.7em;
+    z-index: 1;
+}
+
+.country-list-d {
+    display: flex;
+    flex-direction: column;
+}
+
+.country-list-d a {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    padding: 1em;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: 'Swiss-BC';
+}
+
+.country-list-d p {
+    margin-left: 1em;
+}
+
+hr,
+.d-none,
+.country-block,
+.country-list,
+.menu-ham,
+.follow,
+.mob,
+.registry-mob,
+.legal-mob,
+.country-nav {
+    display: none;
+}
+
+#close-ham {
+    display: none;
+    width: 40px;
+}
+
+.codesend {
+    width: 100%;
+    height: 100vh;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    background: rgba(5, 32, 79, 0.5);
+    backdrop-filter: blur(8px);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.codebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -2em;
+}
+
+.closecode {
+    background: rgba(0, 16, 82, 0.9);
+    position: relative;
+    top: 2em;
+    left: 12em;
+    cursor: pointer;
+}
+
+.closecode img {
+    height: 30px;
+    padding: 1em;
+    margin: auto;
+}
+
+.modalcontent {
+    background: #ffffff;
+    width: 25em;
+    border-radius: 5px;
+}
+
+.modalcontent-inner {
+    display: flex;
+    flex-direction: column;
+    margin: 2em 3em;
+    align-items: center;
+    text-align: center;
+    font-family: 'BebasN';
+    margin-top: 6em;
+}
+
+.code {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 2em;
+    align-items: center;
+    text-align: center;
+    font-family: 'BebasN';
+    margin-top: -2em;
+}
+
+.code h2 {
+    margin-top: -1.5em;
+}
+
+.modalicon {
+    background: url(../imgs/home/code-generate.png) center;
+    background-size: cover;
+    width: 22em;
+    height: 21em;
+}
+
+.modalcontent h2 {
+    color: #142457;
+    font-size: 2em;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+}
+
+.modalcontent p {
+    font-family: 'Dinnex-R';
+    color: #142457;
+}
+
+.modalbutton {
+    color: #f8fafd;
+    letter-spacing: 4px;
+    font-size: 1.2em;
+    padding: 1em 2em;
+    background: #292663;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.askcode {
+    display: flex;
+}
+
+.askcode p {
+    margin-bottom: 0;
+    font-size: 0.8em;
+}
+
+.askcode a {
+    color: #142457;
+}
+
+.code input {
+    height: 40px;
+    width: 100%;
+    margin: 1em 0.5em;
+    margin-top: 0.5em;
+    padding-left: 1em;
+    font-family: 'Dinnex-R';
+    color: #292663;
+    border: 1px solid #e1e1e9;
+}
+
+@media screen and (max-width: 1440px) {
+    .splash img {
+        width: 20em;
+    }
+    .register,
+    .country,
+    .country-list-d a {
+        font-size: 0.75em;
+        padding: 0.1em 1.1em;
+    }
+    .menu-list a {
+        font-size: 0.75em;
+        padding: 1em 1.5em;
+    }
+    .social,
+    .social img {
+        height: 1.1em;
+    }
+    .country-block-d {
+        right: 2em;
+        z-index: 1;
+    }
+    .country-list-d img {
+        height: 45px;
+    }
+    .closecode {
+        top: 1.5em;
+        left: 10em;
+    }
+    .closecode img {
+        height: 15px;
+        padding: 0.5em;
+    }
+    .modalcontent {
+        margin-bottom: 0;
+        width: 20em;
+    }
+    .modalcontent-inner {
+        margin-top: 2em;
+    }
+    .modalcontent img {
+        width: 42%;
+    }
+    .modalcontent h2 {
+        font-size: 1.8em;
+    }
+    .modalcontent p {
+        font-size: 0.8em;
+    }
+    .modalbutton {
+        padding: 0.7em 1.8em;
+    }
+    .code {
+        margin-top: -2em;
+    }
+    .code p {
+        margin-bottom: 0.5em;
+    }
+    .modalicon {
+        width: 15em;
+        height: 15em;
+    }
+    .country img {
+        width: 15px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .splash img {
+        width: 16em;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #tq-logo img {
+        width: 50px;
+    }
+    #sfl-logo img {
+        width: 90px;
+    }
+    .menu-list a {
+        padding: 1em 1em;
+        font-size: 0.7em;
+    }
+    .register,
+    .social,
+    .country {
+        padding: 0 1em;
+        font-size: 0.7em;
+    }
+    .country-list-d a {
+        font-size: 0.7em;
+    }
+    .country-list-d img {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 1112px) {
+    #tq-logo img {
+        width: 40px;
+    }
+    #sfl-logo img {
+        width: 75px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu-list a {
+        padding: 1em 0.9em;
+        font-size: 0.6em;
+    }
+    .register,
+    .social,
+    .country {
+        padding: 0 0.9em;
+        font-size: 0.6em;
+    }
+    .country-list-d a {
+        font-size: 0.6em;
+    }
+    .country-list-d img {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .splash {
+        bottom: 6em;
+        left: -4em;
+    }
+    .menu {
+        justify-content: space-between;
+        box-shadow: 0 2px 6px #051f4f;
+        background: #052e5f;
+    }
+    .logo {
+        margin-left: 3em;
+    }
+    #tq-logo img {
+        width: 54px;
+    }
+    #sfl-logo img {
+        width: 95px;
+    }
+    .mob {
+        position: absolute;
+        top: 100px;
+        background: rgba(5, 32, 79, 0.95);
+        backdrop-filter: blur(6px);
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        padding-top: 0.5em;
+        z-index: 2;
+    }
+    .mob a {
+        margin: 0.5em;
+        padding: 0 0 0.5em;
+        font-size: 1.7em;
+        color: #ffffff;
+        text-decoration: none;
+        letter-spacing: 2px;
+        display: flex;
+        align-items: baseline;
+    }
+    .country-nav {
+        display: block;
+    }
+    .menu-act {
+        border: 0;
+        border-bottom: 2px solid #e9c559;
+    }
+    hr {
+        display: block;
+        width: 27em;
+        border: 1px solid #697a97;
+        margin: 2em 0;
+    }
+    .registry,
+    .country-block-d,
+    .menu-list {
+        display: none;
+    }
+    .registry-mob {
+        display: block;
+        margin-left: 14em;
+    }
+    .register {
+        font-size: 2em;
+        border: none;
+        font-family: 'BebasN';
+        letter-spacing: 3px;
+    }
+    .menu-ham {
+        display: block;
+        margin-right: 2em;
+    }
+    .country-block {
+        display: none;
+        flex-direction: row;
+        padding: 0 1em 1em;
+        background: #22223c;
+    }
+    .country-list {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1em;
+    }
+    .country-list a {
+        display: flex;
+        align-items: center;
+        font-size: 1em;
+        margin: 0.5em 1.5em;
+    }
+    .country-list a img {
+        width: 77px;
+        height: 77px;
+    }
+    .country-list p {
+        margin-left: 1em;
+        font-size: 1.5em;
+    }
+    .country-name {
+        font-size: 1em;
+        padding: 0 2em;
+        display: flex;
+    }
+    .country-name img {
+        margin-right: 1em;
+    }
+    .follow {
+        margin: 0.5em 0 1em;
+        padding: 0 0 0.5em;
+        font-size: 1.5em;
+        color: #ffffff;
+        letter-spacing: 2px;
+        display: flex;
+        align-items: center;
+    }
+    .follow p {
+        margin: 0;
+        padding-top: 0.8em;
+        margin-left: 0.5em;
+    }
+    .follow a {
+        padding: 0;
+        height: 30px;
+        border: none;
+    }
+    .social img {
+        height: 35px;
+    }
+    .legal-mob {
+        display: flex;
+        flex-direction: column;
+        background: #031432;
+        width: 100%;
+        align-items: center;
+        padding: 0.6em 0 0;
+    }
+    .legal-mob a {
+        font-family: sans-serif;
+        font-size: 1.5em;
+        padding-bottom: 0.1em;
+        margin-bottom: 1.5em;
+        border-bottom: 1px solid #ffffff;
+    }
+    .codesend {
+        background: none;
+        backdrop-filter: none;
+        align-items: unset;
+        z-index: -1;
+        top: 0
+    }
+    .codebox {
+        width: 100%;
+        margin: 0;
+    }
+    .closecode {
+        top: 13em;
+        left: 17em;
+        background: none;
+        cursor: pointer;
+    }
+    .closecode img {
+        height: 30px;
+        padding: 0;
+    }
+    .modalcontent {
+        width: 100%;
+        border-radius: 0;
+    }
+    .modalcontent-inner {
+        margin: 10em 8em;
+    }
+    .modalcontent-inner p {
+        font-size: 2em;
+    }
+    .code {
+        margin: 8.3em 8em;
+    }
+    .modalicon {
+        width: 35em;
+        height: 35em;
+    }
+    .modalcontent img {
+        width: 50%;
+    }
+    .modalcontent h2 {
+        font-size: 3.8em;
+    }
+    .code p {
+        margin-bottom: 1em;
+        font-size: 1.5em;
+        color: #082457;
+    }
+    .code input {
+        height: 50px;
+        width: 60%;
+    }
+    .modalbutton {
+        margin: 0.5em 0;
+        font-size: 1.6em;
+        padding: 0.5em 4em;
+    }
+    .askcode p {
+        font-size: 1em;
+    }
+    .askcode p {
+        font-size: 1em;
+    }
+    @media screen and (max-height: 1024px) {
+        .follow {
+            margin-bottom: 0;
+            margin: 0;
+        }
+        hr {
+            margin: 0.5em;
+        }
+        .code {
+            margin: 5.55em 7em;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .logo {
+        margin-left: 2em;
+    }
+    #tq-logo img {
+        width: 43px;
+    }
+    #sfl-logo img {
+        width: 80px;
+    }
+    .menu {
+        height: 5em;
+    }
+    .registry-mob {
+        display: block;
+        margin-left: 6em;
+    }
+    .register {
+        font-size: 1.5em;
+    }
+    .mob {
+        top: 80px;
+    }
+    .mob a {
+        font-size: 1em;
+    }
+    hr {
+        width: 18em;
+        margin: 1em 0;
+    }
+    .country-block {
+        padding: 0;
+    }
+    .country-list a {
+        font-size: 0.8em;
+    }
+    .country-list a img {
+        width: 40px;
+        height: 40px;
+    }
+    .country-list p {
+        font-size: 1em;
+    }
+    .follow {
+        font-size: 1em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    .follow p {
+        padding-top: 0.5em;
+    }
+    .social img {
+        height: 25px;
+    }
+    .menu-ham img {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .closecode {
+        top: 9em;
+        left: 9em;
+    }
+    .closecode img {
+        height: 20px;
+    }
+    .code {
+        margin: 5.3em 3em;
+    }
+    .modalicon {
+        width: 20em;
+        height: 20em;
+    }
+    .modalcontent h2 {
+        font-size: 2.8em;
+    }
+    .code p {
+        font-size: 1.2em;
+    }
+    .modalbutton {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #tq-logo img {
+        width: 35px;
+    }
+    #sfl-logo img {
+        width: 65px;
+    }
+    .registry-mob {
+        margin-left: 3em;
+    }
+    .register {
+        font-size: 1.3em;
+    }
+    .mob {
+        top: 78px;
+    }
+    .mob a {
+        padding: 0 0 0.3em;
+        font-size: 1em;
+        margin: 1.16em 0;
+    }
+    .logo {
+        margin-left: 1.5em;
+    }
+    .country-block {
+        padding: 0 0 0.7em;
+    }
+    .country-list a {
+        margin: 0.5em 1em;
+    }
+    .follow {
+        font-size: 1em;
+        margin-bottom: 0.5em;
+    }
+    .follow a {
+        font-size: 0.6em;
+        margin: 0 1.3em;
+    }
+    .closecode {
+        top: 11.5em;
+        left: 9em;
+    }
+    .closecode img {
+        height: 20px;
+    }
+    .modalcontent-inner {
+        margin: 7em 2em;
+    }
+    .modalcontent img {
+        width: 50%;
+    }
+    .modalcontent h2 {
+        font-size: 2em;
+    }
+    .modalcontent-inner p {
+        font-size: 1em;
+    }
+    .modalcontent-inner {
+        margin: 7em 2em 9.35em;
+    }
+    .modalicon {
+        width: 22em;
+        height: 22em;
+    }
+    .code p {
+        margin-bottom: 1em;
+    }
+    .menu-ham {
+        margin-right: 1.5em;
+    }
+    .menu-ham img {
+        width: 40px;
+    }
+    .back-reg img {
+        width: 30px;
+    }
+    @media screen and (max-height: 740px) {
+        .mob a {
+            margin: 0.75em 0;
+        }
+        .follow {
+            margin-bottom: 0.5em;
+        }
+        .legal-mob {
+            padding: 1.1em 0;
+        }
+        .modalcontent-inner {
+            margin: 5em 2em 5.6em;
+        }
+        .closecode {
+            top: 9.5em;
+            left: 9em;
+        }
+        .follow a {
+            margin: 0 1.3em;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .registry-mob {
+        margin-left: 2em;
+    }
+    .register {
+        font-size: 1.1em;
+    }
+    .closecode {
+        left: 8em;
+    }
+    .country-list p {
+        margin-left: 0.5em;
+    }
+    .follow {
+        margin-bottom: 0.5em;
+    }
+    .follow p {
+        padding-top: 0;
+    }
+    .follow a {
+        margin: 0 1.3em;
+    }
+    .legal-mob {
+        padding-bottom: 1em;
+    }
+    .legal-mob a {
+        margin-bottom: 1.1em;
+    }
+    .mob a {
+        margin: 1em;
+    }
+    .modalcontent-inner {
+        margin: 7em 2em 6em;
+    }
+    @media screen and (max-height: 670px) {
+        .mob a {
+            margin: 0.54em 0;
+        }
+        .modalcontent-inner {
+            margin: 5em 2em 5.8em;
+        }
+        .follow a {
+            margin: 0 1.3em;
+        }
+        .closecode {
+            left: 8em;
+            top: 8.5em;
+        }
+        .modalicon {
+            width: 18em;
+            height: 18em;
+        }
+        .modalcontent h2 {
+            font-size: 1.9em;
+        }
+        .modalbutton {
+            font-size: 1.2em;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .mob {
+        padding-top: 1em;
+    }
+    .mob a {
+        margin: 0.5em 0;
+    }
+    .legal-mob a {
+        font-size: 0.8em;
+        margin-bottom: 0.8em 0;
+    }
+    .modalcontent-inner {
+        margin: 5em 2em 4.2em;
+    }
+    .modalcontent h2 {
+        font-size: 1.8em;
+    }
+    .follow a {
+        margin: 0 1.3em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #tq-logo {
+        margin-right: 0.7em;
+    }
+    #tq-logo img {
+        width: 30px;
+    }
+    #sfl-logo {
+        padding: 0 0.5em;
+    }
+    #sfl-logo img {
+        width: 50px;
+    }
+    .menu-ham img {
+        width: 35px;
+    }
+    .follow {
+        margin-bottom: 0em;
+    }
+    .follow p {
+        padding-top: 0;
+        font-size: 0.8em;
+    }
+    .social img {
+        height: 25px;
+    }
+    hr {
+        width: 13em;
+        margin: 0.5em 0;
+    }
+    .mob a {
+        font-size: 0.8em;
+        margin: 0.87em 0;
+        padding: 0 0.5em;
+    }
+    .social img {
+        height: 20px;
+    }
+    .country-nav img {
+        width: 10px;
+    }
+    .legal-mob {
+        padding-bottom: 0.5em;
+    }
+    .legal-mob a {
+        font-size: 0.5em;
+        margin-bottom: 1.2em;
+    }
+    .country-list p {
+        margin-left: 0.5em;
+    }
+    .country-block {
+        padding: 0;
+    }
+    .country-list a img {
+        width: 30px;
+        height: 30px;
+    }
+    .closecode {
+        left: 7em;
+        top: 8em;
+    }
+    .closecode img {
+        height: 16px;
+    }
+    .modalcontent-inner {
+        margin: 5em 2em 4.15em;
+    }
+    .modalicon {
+        width: 15em;
+        height: 15em;
+    }
+    .modalcontent h2 {
+        font-size: 1.5em;
+    }
+    .code p {
+        font-size: 0.9em;
+    }
+    .modalbutton {
+        font-size: 1.1em;
+    }
+}

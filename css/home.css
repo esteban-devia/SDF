@@ -1,0 +1,247 @@
+.index {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: -1;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-second {
+    display: flex;
+    align-items: center;
+}
+
+.main-img {
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    margin: 0 15em;
+}
+
+.main-img.video {
+    width: 50vw;
+    margin: 0 6em;
+}
+
+.main-img.video video {
+    width: inherit;
+}
+
+.main-img.video iframe {
+    width: inherit;
+    height: inherit;
+}
+
+.main-img img {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+
+.main-img>.prodboxmain {
+    width: 400px;
+    height: 400px;
+}
+
+.main-img a {
+    background: linear-gradient(90deg, rgba(209, 189, 111, 1) 10%, rgba(237, 236, 206, 1) 50%, rgba(217, 164, 54, 1) 85%);
+    height: fit-content;
+    align-self: flex-end;
+    font-family: 'BebasN';
+    font-weight: 700;
+    color: #001253;
+    letter-spacing: 2px;
+    padding: 0.5em 1em 0.3em;
+    text-decoration: none;
+    z-index: 0;
+}
+
+.prev,
+.next {
+    height: 36px;
+    cursor: pointer;
+    z-index: 1;
+    padding: 0.5em;
+}
+
+.prev:hover,
+.next:hover {
+    border: 2px solid;
+    border-image-source: linear-gradient(0deg, rgba(209, 189, 111, 1) 10%, rgba(237, 236, 206, 1) 50%, rgba(217, 164, 54, 1) 85%);
+    border-image-slice: 1;
+}
+
+.dots {
+    display: flex;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    background: #011254;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 0.5em;
+}
+
+.dot.act {
+    height: 14px;
+    width: 14px;
+    background: #ffffff;
+    display: inline-block;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 0.5em;
+}
+
+@media screen and (max-width: 1680px) {
+    .main-img {
+        margin: 0 12em;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .main-img {
+        width: 400px;
+        height: 400px;
+    }
+    .main-img img {
+        width: 400px;
+        height: 400px;
+    }
+    .main-img>.prodboxmain {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-img {
+        margin: 0 9em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .index {
+        position: unset;
+        margin-top: 15%;
+        height: auto;
+    }
+    .main-img {
+        margin: 0 1em;
+        width: 500px;
+        height: 500px;
+    }
+    .main-img img {
+        width: 500px;
+        height: 500px;
+    }
+    .main-img>.prodboxmain {
+        width: 400px;
+        height: 400px;
+    }
+    .main-img.video {
+        width: 70vw;
+        margin: 0 1em;
+    }
+    @media screen and (max-height: 540px) {
+        .slider {
+            margin-bottom: 6em;
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .main-img {
+        margin: 0 -2em;
+        width: 350px;
+        height: 350px;
+    }
+    .main-img img {
+        width: 350px;
+        height: 350px;
+    }
+    .main-img>.prodboxmain {
+        width: 270px;
+        height: 270px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .main-img {
+        width: 300px;
+        height: 300px;
+        margin: 0 -25px;
+        z-index: 0;
+    }
+    .main-img img {
+        width: 300px;
+        height: 300px;
+    }
+    .main-img>.prodboxmain {
+        width: 240px;
+        height: 240px;
+    }
+    .dots {
+        margin-top: 3em;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .slider-second {
+        margin-top: 0;
+    }
+    .dots {
+        margin-top: 2em;
+    }
+    .prev,
+    .next {
+        height: 30px;
+    }
+    .prev img,
+    .next img {
+        height: 30px;
+    }
+    .main-img.video {
+        width: 60vw;
+        margin: 0 1em;
+    }
+    .main-img.video iframe {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main-img {
+        width: 270px;
+        height: 260px;
+    }
+    .main-img img {
+        width: 260px;
+        height: 260px;
+    }
+    .main-img>.prodboxmain {
+        width: 210px;
+        height: 210px;
+    }
+    .next img,
+    .prev img {
+        height: 25px;
+    }
+    .main-img a {
+        font-size: 0.8em;
+    }
+}

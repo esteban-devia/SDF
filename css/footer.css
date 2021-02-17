@@ -1,0 +1,137 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #e6ecf8;
+    font-family: 'Swiss-M';
+    font-size: 0.8em;
+    color: #001253;
+    width: 100%;
+    padding: 1.5em 0 1em;
+    position: fixed;
+    bottom: 0;
+}
+
+footer div {
+    display: flex;
+}
+
+footer div a {
+    padding: 0 2em;
+    border-right: 1px solid #001253;
+    text-decoration: none;
+    color: #001253;
+}
+
+footer span {
+    padding: 0 2em;
+}
+
+footer p {
+    max-width: 94em;
+    margin-bottom: 0;
+}
+
+.footer-mob {
+    display: none;
+}
+
+@media screen and (max-width: 1366px) {
+    footer div a,
+    footer span {
+        font-size: 0.9em;
+    }
+    footer p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    footer p {
+        max-width: 74em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    footer {
+        padding: 1em 0;
+    }
+    footer div {
+        display: none;
+    }
+    footer p {
+        max-width: 39em;
+        font-size: 1.1em;
+    }
+    .footer-mob {
+        display: inline;
+        font-size: 1.5em;
+    }
+    @media screen and (max-height: 540px) {
+        footer {
+            padding: 0.8em 0;
+        }
+        .footer-mob {
+            font-size: 1em;
+        }
+        footer p {
+            max-width: 60em;
+            font-size: 0.7em;
+        }
+    }
+    @media screen and (max-height: 420px) {
+        footer {
+            padding: 0.5em 0;
+        }
+    }
+    @media screen and (max-height: 375px) {
+        .footer-mob {
+            font-size: 0.8em;
+        }
+        footer p {
+            max-width: 70em;
+            font-size: 0.6em;
+        }
+    }
+}
+
+@media screen and (max-width: 660px) {
+    footer {
+        padding: 1em 0;
+    }
+    footer p {
+        font-size: 0.8em;
+        max-width: 49em;
+    }
+    @media screen and (max-height: 375px) {
+        footer p {
+            max-width: 70em;
+            font-size: 0.6em;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    footer {
+        padding: 0.5em 0;
+    }
+    .footer-mob {
+        font-size: 0.9em;
+    }
+    footer p {
+        max-width: 40em;
+        font-size: 0.7em;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer-mob {
+        font-size: 0.8em;
+    }
+    footer p {
+        max-width: 46em;
+        font-size: 0.5em;
+    }
+}

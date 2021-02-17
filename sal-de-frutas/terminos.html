@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/terminos.css">
+    <link rel="stylesheet" href="css/compras.css">
+    <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="css/registro.css">
+    <title>Document</title>
+    <meta name="description" content="Meta description">
+    <link rel="canonical" href="URL_HERE"/>
+    <link rel="alternate" href="URL_HERE" hreflang="es"/>
+    <meta name="Keywords" content="KEYWORDS"/>
+    <meta property="og:type" content="TYPE_HERE" />
+    <meta property="og:title" content="TITLE HERE" />
+    <meta property="og:url" content="URL_HERE" />
+    <meta property="og:image" content="URL_HERE" />
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="logo">
+                <a a rel="nofollow" href="https://www.tqconfiable.com/" id="tq-logo">
+                    <img src="imgs/header/tq-logo.png" alt="tq-logo">
+                </a>
+                <a href="index.html" id="sfl-logo">
+                    <img src="imgs/header/sfl-logo.png" alt="sfl-logo">
+                </a>
+            </div>
+            <nav class="menu-list">
+                <a href="index.html">HOME</a>
+                <a href="productos.html">PRODUCTOS</a>
+                <a href="sintomas.html">SÍNTOMAS</a>
+                <a href="preguntas-frecuentes.html">PREGUNTAS FRECUENTES</a>
+                <a href="comprar.html">COMPRAR</a>
+                <hr>
+                <a href="javascript:void(0)" class="country-nav" onclick="openCountry()">PAÍS<img src="imgs/header/down-arrow.png" alt="down arrow"></a>
+                <div class="country-block">
+                    <div class="country-list">
+                        <a href="#"><img src="imgs/header/Colombia.png" alt="">
+                            <p>COLOMBIA</p>
+                        </a>
+                        <a href="#"><img src="imgs/header/RepDom.png" alt="">
+                            <p>R. DOM.</p>
+                        </a>
+                        <a href="#"><img src="imgs/header/Salvador.png" alt="">
+                            <p>EL SALVADOR</p>
+                        </a>
+                    </div>
+                    <div class="country-list">
+                        <a href="#"><img src="imgs/header/Ecuador.png" alt="">
+                            <p>ECUADOR</p>
+                        </a>
+                        <a href="#"><img src="imgs/header/Guatemala.png" alt="">
+                            <p>GUATEMALA</p>
+                        </a>
+                        <a href="#"><img src="imgs/header/Peru.png" alt="">
+                            <p>COSTA RICA</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="follow">
+                    <p>SÍGUENOS</p>
+                    <a a rel="nofollow" href="https://www.instagram.com/?hl=es-la" target="_blank" class="social">
+                        <img src="imgs/header/instagram.png" alt="instagram">
+                    </a>
+                    <a a rel="nofollow" href="https://www.facebook.com/" target="_blank" class="social">
+                        <img src="imgs/header/facebook.png" alt="facebook">
+                    </a>
+                </div>
+                <div class="legal-mob">
+                    <a href="terminos.html">Políticas de Privacidad</a>
+                    <a href="terminos.html">Términos y Condiciones</a>
+                    <a href="contacto.html">Contáctenos</a>
+                </div>
+            </nav>
+            <div class="registry">
+                <a href="javascript:void(0)" class="register" onclick="openRegister()">REGISTRO</a>
+                <a a rel="nofollow" href="https://www.instagram.com/?hl=es-la" target="_blank" class="social">
+                    <img src="imgs/header/instagram.png" alt="instagram">
+                </a>
+                <a a rel="nofollow" href="https://www.facebook.com/" class="social">
+                    <img src="imgs/header/facebook.png" target="_blank" alt="facebook">
+                </a>
+                <a href="javascript:void(0)" class="country" onclick="openCountryD()">PAÍS <img src="imgs/header/down-arrow.png" alt="down arrow"></a>
+            </div>
+            <div class="registry-mob" onclick="openRegister()">
+                <a class="register">REGISTRO</a>
+            </div>
+            <a href="javascript:void(0)" class="menu-ham" onclick="openMenu()">
+                <img src="imgs/header/ham.png" alt="menu-ham" id="menu-ham">
+            </a>
+        </div>
+        <div class="country-block-d">
+            <div class="country-list-d">
+                <a href="#" class="country-name"><img src="imgs/header/Colombia.png" alt="">
+                    <p>COLOMBIA</p>
+                </a>
+                <a href="#"><img src="imgs/header/Guatemala.png" alt="">
+                    <p>GUATEMALA</p>
+                </a>
+            </div>
+            <div class="country-list-d">
+                <a href="#"><img src="imgs/header/Ecuador.png" alt="">
+                    <p>ECUADOR</p>
+                </a>
+                <a href="#"><img src="imgs/header/Salvador.png" alt="">
+                    <p>EL SALVADOR</p>
+                </a>
+            </div>
+            <div class="country-list-d">
+                <a href="#"><img src="imgs/header/RepDom.png" alt="">
+                    <p>R. DOM.</p>
+                </a>
+                <a href="#"><img src="imgs/header/Peru.png" alt="">
+                    <p>COSTA RICA</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="terms-section menpos">
+        <div id="first-mob">
+            <div class="back-mob">
+                <a href=""><img src="imgs/home/left-arrow.png" alt=""></a>
+            </div>
+        </div>
+        <div class="terms">
+            <h1>TERMINOS Y CONDICIONES DEL PORTAL<br>WWW.SALDEFRUTASLUA.COM</h1>
+            <div class="terms-text">
+                <p>Le damos la bienvenida al Portal Side Sal de Frutas LUA (en adelante El Portal), patrocinado por _ Tecnoquimicas S.A. (en adelante indistintamente referida como La Compañía). Desde el momento que ingresa en el Portal o cualquiera de las
+                    páginas web que contiene, debe saber que se sujeta a los siguientes Términos y Condiciones de uso sin reserva alguna. Por esta razón, en su calidad de usuario del portal, lo invitamos a leer cuidadosamente la siguiente información:
+                    <ol>
+                        <li>
+                            <h2>Objeto del Portal y público al que se dirige:</h2>
+                            <p> Este Portal está dirigido al público en general, exclusivamente mayores de edad. Los usuarios del portal deben constatar que hacen parte del grupo descrito, para tal efecto, La Compañía se reserva el derecho de preguntar, adquirir
+                                o consultar información que constate dicha condición del usuario. </p>
+                            <h3> El objetivo del Portal es:</h3>
+                            <ul>
+                                <li>Proporcionar información sobre la marca Sal de frutas LUA y sus productos. </li>
+                                <li>Ofrecer contenido de interés sobre síntomas confines informativos y orientación general, que en ningún momento reemplazan los diagnósticos y recomendaciones médicas, ni aseguran resultados. </li>
+                                <li>Ser un puente de comunicación con los usuarios para que estos puedan conocer más información sobre los productos de Sal de Frutas LUA y puedan adquirir los productos. </li>
+                                <li>Ubicar a la marca con una identidad única visible al consumidor.</li>
+                                <li>Conocimiento rápido en otros países. </li>
+                                <li>Tener un sitio donde se pueda encontrar toda la información relacionada con la marca. </li>
+                                <li>Generar afinidad a través de lenguaje que se use en la página </li>
+                                <li>Ser una ventana de comunicación económica y directa. </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h2>Aceptación de los términos y condiciones:</h2>
+                            <p>La utilización directa, indirecta o asistida del Portal o de las páginas que contiene, implica por parte del usuario que ha leído, entendido y que brinda su aceptación plena y sin reservas de los Términos y Condiciones aquí
+                                descritos; por lo cual, si en algún momento no está de acuerdo con cualquiera de los aspectos aquí regulados, o no hace parte del público objetivo, debe abstenerse de acceder a este Portal. Si decide continuar con su visita
+                                se entenderá que comprende y acepta las condiciones que se describen a continuación, así como nuestra Política de Privacidad y de Protección datos personales de la Compañía, la cual se puede consultar dentro del Portal
+                                en la pestaña Política de Tratamiento de Datos personales o en el link https://www.tqconfiable.com/politicas-de-privacidad. La compañía como propietaria y responsable del Portal, se reserva el derecho de modificar los Términos
+                                de Uso del Portal en cualquier momento y sin requerir previa notificación de sus usuarios. El usuario se compromete a revisar estos términos y condiciones al ingresar al Portal, verificar la fecha de su actualización y
+                                mantenerse informado de los cambios y modificaciones que se puedan presentar. El uso del portal significa que el Usuario acepta, sin reservas, las modificaciones, adiciones o supresiones que se presenten en los Términos
+                                de uso del mismo.</p>
+                        </li>
+                        <li>
+                            <h2>Ley y jurisdicción aplicable:</h2>
+                            <p>Los Términos y Condiciones que regulan el uso del Portal o de las páginas que contiene se regirán e interpretarán de acuerdo con las leyes de la República de Colombia. Cualquier controversia que se genere entre el Usuario y
+                                La Compañía, por el ingreso y/o uso del Portal o cualquiera de las páginas que contiene cualquiera, o por los servicios que allí se prestan, se llevará ante los jueces de la República de Colombia y será resuelto de acuerdo
+                                con las leyes de este país. Por lo anterior, tanto el Usuario como la Compañía renuncian de manera expresa a cualquier otro fuero que pudiera corresponderles como consecuencia de su domicilio presente o futuro. Si el juez
+                                competente considera que cualquier cláusula o parte de los Términos y Condiciones es inválida o inaplicable, el resto de los Términos y Condiciones continuarán aplicándose en su total efecto. La Compañía reconoce que pueden
+                                existir usuarios del Portal de otros países, estos también se regirán de acuerdo con la ley y jurisdicción aplicable señalada anteriormente. La Compañía no puede garantizar que el material incluido en este sitio sea apropiado
+                                o acorde con las normas de otros países.</p>
+                        </li>
+                        <li>
+                            <h2>Registro y aceptación del uso de datos:</h2>
+                            <p>El acceso al Portal es gratuito, es decir, que no requiere el pago de cargos. Sin embargo, el usuario tendrá la posibilidad de registrarse en nuestra sección Registro/Iniciar Sesión, en la cual deberá diligenciar los datos
+                                de contacto que le soliciten y que estén señalados como obligatorios, tales como pero sin limitarse a Nombre Usuario, Email, Celular, Número de Cédula. La información personal que suministre el Usuario para acceder a dichos
+                                contenidos, se recibe sólo si es proporcionada voluntaria y conscientemente. El usuario acepta y autoriza a La Compañía para que registren estos datos en sus archivos electrónicos, para ser tratados de conformidad con lo
+                                dispuesto en su Política de Tratamiento de Datos Personales, a la que puede acceder desde el link: https://www.tqconfiable.com/politicas-de-privacidad. Conforme a dicha Política de Privacidad, si el Usuario decide inscribirse,
+                                sus datos serán utilizados para cualquiera de las siguientes finalidades: 1) Proveerle la información y/o servicios solicitados; 2) informarle sobre las marcas y productos que comercializa la Compañía, así como sobre las
+                                actividades promocionales que lleva a cabo; 3) mantenerlo al tanto sobre actividades de educación continuada en las áreas de medicina y el cuidado de la salud 4) evaluar la calidad de nuestros productos y elnivel de conocimiento
+                                que tienen los consumidores y usuarios sobre ellos; 5) realizar tratamiento estadístico de los datos de nuestros consumidores y usuarios; 6) realizar estudios internos sobre productos, marcas o hábitos de consumo; 7) contactarlo
+                                y atender adecuadamente a sus comentarios, peticiones, solicitudes y/o reclamos; 8) compartir, transferir y transmitir datos a sociedades filiales o compañías del grupo empresarial al que pertenece La Compañía, con la finalidad
+                                de realizar el Tratamiento de los datos de conformidad con sus Políticas o según las finalidades aquí descritas; 9) contactarlo personalmente, vía telefónica, por correo electrónico u mediante otro mecanismo, con el fin
+                                de realizar las actividades descritas en el Portal; 10) atender requerimientos de autoridades y cumplir con las obligaciones legales; 11) compartirlos o enviarlos con aliados comerciales, mediante condiciones seguras, para
+                                el ofrecimiento de servicios con beneficios para nuestros usuarios y para fines comerciales relacionados con la ejecución de las actividades descritas en el Portal; 12) mantenimiento por sí mismo o a través de un tercero
+                                de las bases de datos; 13) transferirlos y transmitirlos a terceros con quienes realice alianzas relacionadas con su objeto social, contrate estudios o les encargue el tratamiento de datos enmarcados en las finalidades
+                                aquí descritas; 14) confirmar o actualizar los datos. El Usuario, como titular de sus datos, puede consultar la Política de Privacidad que acepta conocer, en donde se detalla el tratamiento, recolección, almacenamiento,
+                                uso y procesamiento de la información recogida, así como los procedimientos de consulta y reclamación que le permitirán hacer efectivos sus derechos al acceso, consulta, rectificación, actualización y supresión de los datos,
+                                en los términos que señale la ley. El contacto y uso de los datos podrá efectuarse desde el mismo momento en que los facilita. Por su parte, con su aceptación Tecnoquímicas S.A., sus filiales, subsidiarias y /o subordinadas,
+                                se comprometerá a cuidar la confidencialidad y secreto de los datos, a no ceder ni venderlos ni permitir el acceso por parte de terceros no autorizados. Las compañías descritas podrán permitir su acceso por parte de terceros
+                                aliados bajo estrictas condiciones de confidencialidad y exclusivamente para cumplir con las finalidades descritas en el presente acuerdo, quienes en general darán aplicación a su política de tratamiento de datos y la de
+                                Tecnoquímicas que se puede consultar en www.tecnoquimicas.com. La anterior autorización estará vigente hasta la expresa oposición del usuario, pudiendo en cualquier momento solicitar a Tecnoquímicas S.A. sus derechos de
+                                acceso, rectificación, actualización, cancelación y supresión de los datos de acuerdo con la Ley 1581 de 2012. Contactarse a 018000 523339 o al correo info.data@tecnoquimicas.com La Compañía se reserva el derecho a modificar
+                                esta Declaración de Privacidad en cualquier momento y sin requerir previa notificación de sus usuarios.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Información sobre menores de edad: </h2>
+                            <p>El Portal está diseñado principalmente para personas cuya edad sea de 18 años en adelante. Si el usuario es menor de edad o incapaz, debe abstenerse de ingresar y de utilizar el Portal, sin el previo consentimiento de sus padres,
+                                tutores o curadores. Si la Compañía descubre que ha recolectado información de menores o incapaces sin el consentimiento de sus padres, procederá a eliminar el registro lo más pronto posible de acuerdo con la legislación
+                                aplicable en Colombia. De acuerdo con la dispuesto en la Ley 1581 de 2012, en ningún momento los padres o responsables de los menores de edad se encuentran obligados a autorizar el tratamiento de datos de sus hijos. No
+                                obstante lo anterior, La Compañía aclara que, conforme a las disposiciones aplicables en Colombia, el objeto del Portal no es el de atentar contra los intereses superiores, los derechos fundamentales, ni actuará tampoco
+                                contra la moral, o la salud física o mental de los menores de edad (niños, niñas y adolescentes) o incapaces, tampoco es el de obtener información confidencial e íntima del Usuario con el propósito de usarla en su contra.
+                                Los padres, tutores o curadores del Usuario menor de edad o incapaz son responsables totalmente por la utilización que el Usuario menor de edad o incapaz haga de del Portal o su contenido. </p>
+                        </li>
+                        <li>
+                            <h2>Autorización para el tratamiento de datos sensibles:</h2>
+                            <p>En caso de que se solicite información de carácter sensible, de acuerdo con lo dispuesto en el artículo 5 de la Ley 1581 de 2012, el usuario reconoce que su autorización es voluntaria. Al ingresar al Portal y proporcionar la
+                                información solicitada, el usuario acepta y autoriza de forma voluntaria el tratamiento de los datos sensibles que se realizará de conformidad con las finalidades mencionadas en el numeral cuarto del presente documento,
+                                la Política de Tratamiento de Datos Personales de la Compañía disponible en la pestaña Política de Tratamiento de Datos personales del Portal y la Ley 1581 de 2012. </p>
+                        </li>
+                        <li>
+                            <h2>Enlaces Informativos:</h2>
+                            <p>El Portal puede contener información diversa como investigaciones, noticias, artículos y demás contenidos (los “Servicios Informativos”), los cuales son publicados por el Portal con fines exclusivamente informativos, educativos
+                                o de conocimiento general, de acuerdo con la responsabilidad limitada del Portal. En ningún caso se entenderá que los contenidos del Portal promocionan el consumo de medicamentos. De igual forma, en ningún caso el Portal
+                                o Tecnoquimicas S.A. tendrán responsabilidad alguna por los daños y perjuicios que pudieran ocasionarse por el uso de los Servicios Informativos con fines distintos a los autorizados en estos Términos de Uso o en los documentos
+                                que forman parte del mismo. La Compañía manifiesta que es posible que la información del Portal llegue a estar incompleta, desactualizada o pueda ser susceptible de ser revaluada. Por esta razón, el Usuario es responsable
+                                absoluto del manejo del Portal, sus contenidos y servicios, de realizar la respectiva verificación y validación de los mismos, así como del uso final que de ellos realice. Aunque La Compañía realiza todos los esfuerzos
+                                para garantizar que Los Servicios Informativos de carácter educativo y las recomendaciones que pueda dar en este Portal sean correctos y estén actualizados, la información aportada debe entenderse como una guía y no reemplaza
+                                la asesoría de un profesional de la salud en caso de enfermedad o dolencia respecto a una situación particular. Sobre la información que se publique en el Portal, se establece que su único fin es educativo y de ningún modo
+                                busca dar un diagnóstico final a un padecimiento, dolencia o afección, ni de incentivar la automedicación o el consumo de medicamentos. Se recomienda que si se presenta algún sintoma la persona se dirija directamente a
+                                un especialista o profesional de la salud para que sea atendido por él. El Portal contiene distintos enlaces a los que el usuario podrá ingresar de acuerdo con su interés particular: - Productos: El usuario tendrá a su
+                                disposición la información básica de cada una de las referencias que hacen parte del portafolio de productos. - Síntomas - Indicaciones: El usuario encontrará situaciones cotidianas en que se pueden presentar los síntomas
+                                y una breve descripción sobre indicaciones de los productos que se encuentran en el portal. No obstante, las situaciones descritas no abordan la totalidad de posibles diagnósticos relacionados con el sintoma, por ello se
+                                recomienda acudir a un profesional en salud. Sobre este contenido, se aclara que tiene fines informativos y que pretenden dar una orientación general, de tal manera que no reemplazan los diagnósticos y recomendaciones médicas,
+                                ni aseguran resultados. - FAQ – Preguntas y Respuestas informativas: El usuario tendrá a su disposición un banco de preguntas y respuestas en relación a los medicamentos que seencuentran descritos en el Portal. Se aclara
+                                que dicha información son sugerencias con fines informativos y no reemplazan una orientación médica ni científica. - Comprar: El usuario podrá ingresar a las páginas de diferentes clientes donde podrá adquirir los productos.
+                                Cabe resaltar que una vez el usuario ingresa al enlace de comprar, lo hace bajo su propia responsabilidad. Por lo tanto, el usuario mantendrá indemne a la Compañía por cualquier reclamación o litigioque surja del uso de
+                                los portales externos y de la adquisición de los productos.
+                            </p>
+                        </li>
+                        <li>
+                            <h2>Propiedad Industrial e Intelectual:</h2>
+                            El Portal, su contenido y todos sus derechos de propiedad industrial e intelectual incluidos en el mismo, tales como derechos de autor, marcas comerciales, enseñas,gráficos, dibujos, diseños, ilustraciones, software, música, sonido, fotografías, videos
+                            ydemás contenidos, son propiedad de o están licenciados a La Compañía bajo una autorización para su uso. Por lo tanto, todo derecho, título e interés que derive de tales derechos, son propiedad de La Compañía y/o sus licenciatarios
+                            y sucesores. El Usuario se abstendrá de tomar o usar indebidamente los contenidos que puedan infringir estos derechos contenidos en la información expresada a través del Portal, por lo que no se encuentra autorizado su modificación,
+                            reproducción, publicación, uso o distribución, sin la previa autorización de sus titulares. Si el Usuario llegare a realizar una violación de derechos de autor o a realizar un uso indebido de dicha información, será plena y
+                            totalmente responsable por los perjuicios y daños que le pueda generar a la Compañía o a terceros. Las ideas, opiniones, sugerencias y comentarios que sean enviadas en forma espontánea y sin previa solicitud, por los Usuarios
+                            a La Compañía, relativas a productos, servicios o planes de mercadeo, o de cualquier otro tipo, podrán ser usadas libremente por La Compañía, si lo considera conveniente, para el desarrollo de nuevos productos, inversiones,
+                            negocios o planes de mercadeo. Lo anterior, bajo el entendimiento de que tales comunicaciones no son confidenciales y no están protegidas por las normas de la Propiedad Intelectual y por ende, el usuario remitente de tal información,
+                            no podrá reclamar indemnización o participación alguna en virtud del legítimo uso comercial que la Compañía de a la misma. Los logos, lemas comerciales y demás marcas, son de titularidad de La Compañía. Todos los nombres comerciales,
+                            lemas comerciales (slogans) y/o marcas mencionadas en banners o avisos publicitarios diferentes a los de La Compañía son marcas de sus respectivos propietarios. Cualquier uso no autorizado de estas marcas u otros materiales
+                            está expresamente prohibido y constituye una violación a las normas sobre derechos de autor y propiedad industrial.</p>
+                </li>
+                <li>
+                    <h2>Responsabilidad limitada:</h2>
+                    <p>Este sitio es controlado y ha sido puesto en funcionamiento por La Compañía desde sus oficinas en Colombia. El Portal ha sido creado para el uso de residentes en Colombia y se ha estructurado con ánimo de atender las normas imperativas
+                        y de orden público de este país en lo pertinente. No obstante, La Compañía reconoce el alcance global del World Wide Web y por lo tanto que otros países pueden tener otros requisitos legales o reguladores que requieran referencia
+                        a información diversa o adicional a la aquí suministrada. La Compañía no puede garantizar que el material incluido en este sitio sea apropiado o acorde con las normas de otros países. La Compañía no conoce todos los sitios que
+                        se pueden conectar a su sitio a través de &quot;vínculos electrónicos&quot; o &quot;links&quot; y no es responsable del contenido de ninguna página &quot;off-site&quot; o de otros sitios conectados al suyo. Quienes libremente acceden
+                        a este sitio o quienes deseen tener acceso a otros sitios conectados mediante &quot;links&quot; a este sitio, lo hacen por su propia iniciativa. Los materiales de este sitio y de las páginas que los componen se proporcionan sin
+                        garantías de ninguna clase expresa o tácita. La Compañía no garantiza que las funciones técnicas y de operación de su sitio se presenten sin interrupciones o libres de errores, que dichos defectos sean corregidos, o que este sitio
+                        o el servidor que lo hace disponible al público estén libres de virus u otros componentes perjudiciales. La Compañía proporciona el contenido de su sitio solamente con propósitos informativos y para su interés general de la comunidad.
+                        Bajo ninguna circunstancia, podrá ser obligada a responder por cualquier clase de daño que resultase del uso del material del sitio web de la Compañía o de materiales de cualquier sitio que tenga &quot;vínculos electrónicos&quot;
+                        o &quot;links&quot; con el Portal. El Usuario no debe utilizar la información contenida aquí para diagnosticar su salud o un problema de salud o una enfermedad. El usuario debe consultar siempre a su propio médico o un consejero
+                        experto en temas de salud. La Compañía hace esfuerzos razonables para incluir información actualizada en su sitio web, pero no garantiza en ningún momento su exactitud. Por lo tanto, la Compañía no asume ninguna responsabilidad
+                        por errores u omisiones en el contenido del sitio. Si requiere asesoría o instrucción sobre nuestros productos o servicios, por favor contáctenos directamente a la Línea de Atención al Consumidor 01-8000-52 3339, a través del correo
+                        electrónico serviciosalconsumidor@tecnoquimicas.com o info.data@tecnoquimicas.com. Los Usuarios de éste sitio declaran estar de acuerdo en acceder al mismo y a su contenido bajo su propio riesgo. Ni La Compañía ni terceras personas
+                        involucradas en la publicación, producción o transmisión de este sitio puede resultar responsable por daños o injurias por el acceso o la imposibilidad del mismo, del uso o de la imposibilidad de uso del sitio o del hecho que usted
+                        se haya confiado en la información dada en este sitio, o del mal uso que el usuario haga de la información contenida en este sitio. La Compañía no se responsabiliza por daños en las Plataformas que puedan alterar o interrumpir
+                        el normal desarrollo del Portal ni por los daños o perjuicios causados a los usuarios como consecuencia del suministro de datos o información a través mismo, pues se entiende que lo hace de manera espontánea, libre y voluntaria,
+                        ingresando sus datos reales. La Compañía no tiene control sobre redes o líneas, por tanto no será responsable por fallas en la red Internet, en los equipos de cómputo o en los dispositivos móviles, problemas de conexión, ni por
+                        errores técnicos o humanos, ni por acciones deliberadas de terceros que pudieran interrumpir o alterar el normal desarrollo del Portal. La Compañía se reserva el derecho a suspender o cancelar el Portal cuando por razones de fuerza
+                        mayor, caso fortuito o cualquier otro motivo ajeno a su voluntad y condicionante de la misma, resulte necesario.</p>
+                </li>
+                <li>
+                    <h2>Encabezados:</h2>
+                    <p>Los encabezados de estos Términos de Uso, son solamente para efectos de referencia y en ningún caso definirán, limitarán, constituirán o describirán la aplicación o contenido de dicha sección. </p>
+                </li>
+                <li>
+                    <h2>Galletas o Cookies:</h2>
+                    <p>Este sitio hace uso de cookies: pequeños ficheros de datos que se generan en su ordenador, el cual envía información sin proporcionar referencias que permitan deducir datos personales de éste. El usuario podrá configurar su navegador
+                        para que notifique y rechace la instalación de las cookies enviadas por este sitio, sin que ello perjudique la posibilidad de acceder a los contenidos. Sin embargo, La Compañía no se responsabiliza de que la desactivación de los
+                        mismos impida el buen funcionamiento del Portal.</p>
+                </li>
+                <li>
+                    <h2>Enlaces (Links):</h2>
+                    <p>El Portal puede contener enlaces a páginas/sitios Web ajenos a La Compañía que contribuyan a brindar información, actualización y formación a sus usuarios. Además, estas páginas pueden llegar a ser medios autorizados para adquirir
+                        los productos del portafolio del Portal. Sin embargo, La Compañía no será responsable de la disponibilidad de los mismos, y tampoco de las políticas o prácticas de dichos enlaces que figuren en el Portal. La Compañía no se hace
+                        responsable por el funcionamiento, autorizaciones, manejo de datos y transacciones que se lleven a cabo en páginas vinculadas al Portal. Una vez se ingrese al enlace de una página externa, el usuario lo hará bajo su propia responsabilidad
+                        y teniendo en cuenta los términos y condiciones de esos portales totalmente ajenos al Portal de la Compañía. Por lo tanto, el usuario mantendrá indemne a la Compañía por cualquier reclamación o litigio que surja del uso de los
+                        portales externos y de la adquisición de los productos. </p>
+                </li>
+                <li>
+                    <h2>Contáctenos:</h2>
+                    <p>Si tiene alguna pregunta acerca de estos Términos de Uso del Portal o de la Política de Privacidad de la Compañía, puede enviarla a través de la Línea de Atención al Consumidor 01-8000-520810, o a través del correo electrónico saldefrutaslua@tecnoquimicas.com_______________</p>
+                </li>
+                <li>
+                    <h2>Terminación:</h2>
+                    <p>La Compañía se reserva el derecho, sin responsabilidad alguna de su parte, de terminar el uso del Portal para los usuarios que le den un uso inadecuado, o en cualquier momento en general, si así lo decide conveniente y para el público
+                        o la comunidad, sin notificación previa alguna.</p>
+                </li>
+                <li>
+                    <h2>Deberes de los usuarios</h2>
+                    <p> El Usuario se obliga a usar los contenidos encontrados en El Portal de una manera responsable, diligente, correcta, lícita, conforme a los principios éticos de su profesión y la actividad o servicio que desarrolla. En especial, se
+                        compromete a NO realizar las conductas descritas a continuación: a. Utilizar el Contenido para incurrir y/o incitar a terceros a incurrir en actividades ilícitas, ilegales o contrarias a la buena fe, la moral, las buenas costumbres
+                        generalmente aceptadas, al orden público, o para difundir contenidos o propaganda de carácter discriminatorio, o atentatorio contra los derechos humanos; b. Reproducir, copiar, representar, utilizar, distribuir, transformar o modificar
+                        los contenidos del Portal por cualquier procedimiento o sobre cualquier soporte, total o parcial, con finalidades no autorizadas por sus titulares. c. Usar secuencias de comandos automatizadas para recopilar información publicada
+                        en el Portal o a través del Portal o para interactuar de cualquier otro modo con los mismos; d. Provocar daños en los sistemas físicos y lógicos de La Compañía, de sus proveedores o de terceras personas, introducir o difundir en
+                        la red virus informáticos, troyanos, código malicioso o cualesquiera otros sistemas físicos o lógicos que sean susceptibles de provocar daños en y/o estén diseñados para interrumpir, destruir o limitar la funcionalidad de cualquier
+                        software, hardware o equipo de telecomunicaciones o para dañar, deshabilitar, sobrecargar o perjudicar el Portal de cualquier modo; e. Intentar o acceder, recolectar o almacenar los datos personales de otros Visitantes y/o Usuarios
+                        del Portal y, en su caso, utilizar las cuentas de correo electrónico o datos de otros Visitantes y/o Usuarios y modificar o manipular sus mensajes. f. Utilizar el Portal y los Contenidos con fines o efectos ilícitos, contrarios
+                        a lo establecido en estos Términos y Condiciones, lesivos de los derechos e intereses de terceros, o que de cualquier forma puedan dañar, inutilizar,sobrecargar o deteriorar el Portal y los Contenidos o impedir la normal utilización
+                        o disfrute del Portal y de los Contenidos por parte de los usuarios. g. Proporcionar información personal falsa en el Portal, crear cuentas para otras personas sin su autorización o transferir la cuenta sin consentimiento previo.</p>
+                </li>
+                </ol>
+                <p> Aviso de Privacidad - Habeas data Tecnoquímicas S.A. (en adelante &quot;Tecnoquímicas&quot;), en cumplimiento de la Ley 1581 de 2012, Reglamento 1377 de 2013 y demás normas concordantes, en su calidad de responsable de sus propias bases
+                    de datos y encargada de la administración de las bases de datos de sus sociedades filiales, subordinadas y/o subsidiarias es responsable del tratamiento de sus datos personales. En este sentido señala que la información personal que
+                    se incluya en nuestras bases de datos podrá ser usada para alguno o algunos de los siguientes fines:</p>
+                <ul>
+                    <li> Proveerle la información y/o servicios solicitados; </li>
+                    <li> Contactarlo personalmente, vía telefónica, por correo electrónico u mediante otro mecanismo para el cumplimiento de los fines aquí descritos; </li>
+                    <li> Atender requerimientos de autoridades y cumplir con las obligaciones legales; </li>
+                    <li> Informarle sobre las marcas y productos que comercializa la Compañía, así como sobre las actividades promocionales y/o de mercadeo que lleva a cabo; </li>
+                    <li> Evaluar la calidad de nuestros productos y el nivel de conocimiento que tienen los consumidores y usuarios sobre ellos; </li>
+                    <li> Realizar tratamiento estadístico de los datos de nuestros consumidores y usuarios; </li>
+                    <li> Realizar estudios internos sobre hábitos de consumo, productos y marcas; </li>
+                    <li> Compartir, Transferir y Transmitir datos a sociedades filiales o compañías pertenecientes al grupo empresarial Tecnoquímicas S.A., con la finalidad de realizar el Tratamiento de los datos de conformidad con sus Políticas o según las
+                        finalidades aquí descritas; </li>
+                    <li> Compartirlos o enviarlos con aliados comerciales para el ofrecimiento de servicios con beneficios para nuestros usuarios; </li>
+                    <li> Mantenimiento por sí mismo o a través de un tercero de las bases de datos; </li>
+                    <li> Transferencia y transmisión de datos a terceros con quienes realice alianzas relacionadas con su objeto social, contrate estudios o les encargue el tratamiento de datos enmarcados en las finalidades aquí descritas; </li>
+                    <li> Contactar al usuario para confirmar o actualizar sus datos así como para atender adecuadamente a sus comentarios, peticiones, solicitudes y/o reclamos.</li>
+                </ul>
+
+                <p> Como titular de sus datos puede consultar la Política de Privacidad y Tratamiento de Datos Personales de Tecnoquímicas S.A. mediante el acceso dispuesto en el mismo portal, donde se detalla el tratamiento, recolección, almacenamiento,
+                    uso, procesamiento, de la información recogida, así como los procedimientos de consulta y reclamación que le permitirán hacer efectivos sus derechos al acceso, consulta, rectificación, actualización y supresión de los datos, en los
+                    términos que señale la ley. En caso de cualquier inquietud relacionada con la presente autorización puede contactarnos a través de nuestra Línea de Atención al Consumidor 01-8000-52 3339, a través del correo electrónico serviciosalconsumidor@tecnoquimicas.com
+                    o info.data@tecnoquimicas.com, o en cualquiera de nuestras oficinas:</p>
+                <ul>
+                    <li> Principal: Calle 23 No. 7-39 Cali </li>
+                    <li> Regional Pereira: Carrera 9 No. 38-74 - Bodega 3 Pereira </li>
+                    <li> Regional Cundinamarca: Carrera 34 No. 18-31 Bogotá. </li>
+                    <li> Regional Atlántico: Carrera 18 No. 28-141 Barranquilla. </li>
+                    <li> Regional Antioquia: Carrera 51 No. 14-249 Medellín.</li>
+                    <li> Regional Oriente: Calle 58 No. 22-12 Puerta del Sol Bucaramanga.</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="registry-form">
+        <div class="alert-mob">
+            <div class="back-mob back-reg">
+                <a href=""><img src="imgs/home/left-arrow.png" alt=""></a>
+            </div>
+            <p> <img src="imgs/header/alert-icon.png" alt=""> ¡Por favor regístrese antes de comprar!</p>
+        </div>
+        <div class="registry-container">
+            <div class="registry-inner">
+                <div>
+                    <div class="registry-alert">
+                        <p> <img src="imgs/header/alert-icon.png" alt=""> ¡Por favor regístrese antes de comprar!</p>
+                        <div class="close-reg">
+                            <a onclick="closeReg()"><img src="imgs/symptoms/close-icon.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="formulary">
+                        <h1>REGISTRO</h1>
+                        <p>con su red social</p>
+                        <div class="social-reg">
+                            <a href="">
+                                <img src="imgs/header/google-icon.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="imgs/header/facebook-icon.png" alt="">
+                            </a>
+                        </div>
+                        <form action="" name="registryForm" id="registryForm" class="form-reg" autocomplete="off">
+                            <div class="inputs">
+                                <div class="singleinput">
+                                    <label class="textfield">
+                                        <input placeholder=" " name="name" id="name">
+                                        <span>Nombre*</span>
+                                        <p class="errormesage">&nbsp;</p>
+                                    </label>
+                                </div>
+                                <div class="singleinput">
+                                    <label class="textfield">
+                                        <input placeholder=" " name="lastname" id="lastname">
+                                        <span>Apellido*</span>
+                                        <p class="errormesage">&nbsp;</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="inputs selectinp">
+                                <div class="wrap">
+                                    <div class="select">
+                                        <select class="select-text" required name="gender" id="gender">
+                                            <option value="" disabled hidden selected></option>
+                                            <option value="female">Mujer</option>
+                                            <option value="male">Hombre</option>
+                                            <option value="other">Otro</option>
+                                        </select>
+                                        <span class="select-label">Seleccionar Género</span>
+                                    </div>
+                                    <p id="errorgender">&nbsp;</p>
+                                </div>
+                            </div>
+                            <div class="reg-idType">
+                                <div class="inputs">
+                                    <p>Típo de documento:</p>
+                                    <div>
+                                        <div class="idtype">
+                                            <input type="radio" name="idtype" id="CC" value="CedulaC">
+                                            <span class="idspan"><img src="imgs/header/id-icon.png" alt="">Cédula de ciudadanía</span>
+                                        </div>
+                                        <div class="idtype">
+                                            <input type="radio" name="idtype" id="CE" value="CedulaE">
+                                            <span class="idspan"><img src="imgs/header/id-icon.png" alt="">Cédula de extranjería</span>
+                                        </div>
+                                    </div>
+                                    <p id="erroridtype">&nbsp;</p>
+                                </div>
+                            </div>
+                            <div class="inputs">
+                                <label class="textfield" id="numberid">
+                                    <input placeholder=" " type="number" name="idnumber" id="idnumber">
+                                    <span>Número de documento*</span>
+                                    <p class="errormesage">&nbsp;</p>
+                                </label>
+                            </div>
+                            <div class="inputs">
+                                <div class="singleinput">
+                                    <label class="textfield">
+                                        <input placeholder=" " name="email" id="email">
+                                        <span>Email*</span>
+                                        <p class="errormesage">&nbsp;</p>
+                                    </label>
+                                </div>
+                                <div class="singleinput">
+                                    <label class="textfield">
+                                        <input placeholder=" " type="number" name="celphone" id="celphone">
+                                        <span>Celular*</span>
+                                        <p class="errormesage">&nbsp;</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="check-reg">
+                                <div class="checkterms">
+                                    <input type="checkbox" name="terms" id="tyc" value="Acepto">
+                                    <label for="tyc">Acepto <a href="terminos.html">términos y condiciones</a> y las <a href="terminos.html">políticas de tratamiento de datos*</a></label>
+                                </div>
+                            </div>
+                            <button type="submit" form="registryForm" id="register" onclick="return validateForm()">REGISTRARSE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+    <script src="js/header.js"></script>
+    <script src="js/register.js"></script>
+</body>
+
+</html>

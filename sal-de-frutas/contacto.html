@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/registro.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <title>Document</title>
+    <meta name="description" content="Meta description">
+    <link rel="canonical" href="URL_HERE"/>
+    <link rel="alternate" href="URL_HERE" hreflang="es"/>
+    <meta name="Keywords" content="KEYWORDS"/>
+    <meta property="og:type" content="TYPE_HERE" />
+    <meta property="og:title" content="TITLE HERE" />
+    <meta property="og:url" content="URL_HERE" />
+    <meta property="og:image" content="URL_HERE" />
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="logo">
+                <a a rel="nofollow" href="https://www.tqconfiable.com/" id="tq-logo">
+                    <img src="imgs/header/tq-logo.png" alt="tq-logo">
+                </a>
+                <a href="index.html" id="sfl-logo">
+                    <img src="imgs/header/sfl-logo.png" alt="sfl-logo">
+                </a>
+            </div>
+            <nav class="menu-list">
+                <a href="index.html" class="menu-act">HOME</a>
+                <a href="productos.html">PRODUCTOS</a>
+                <a href="sintomas.html">SÍNTOMAS</a>
+                <a href="preguntas-frecuentes.html">PREGUNTAS FRECUENTES</a>
+                <a href="comprar.html">COMPRAR</a>
+                <hr>
+                <a href="javascript:void(0)" class="country-nav" onclick="openCountry(1)">PAÍS<img src="imgs/header/down-arrow.png" alt="down arrow"></a>
+                <div class="country-block">
+                    <div class="country-list">
+                        <a href="#"><img src="imgs/header/Colombia.png" alt="">
+                            <p>COLOMBIA</p>
+                        </a>
+                        <a href="#"><img src="imgs/header/RepDom.png" alt="">
+                            <p>R. DOM.</p>
+                        </a>
+                        <a href="#"><img src="imgs/header/Salvador.png" alt="">
+                            <p>EL SALVADOR</p>
+                        </a>
+                    </div>
+                    <div class="country-list">
+                        <a href="#"><img src="imgs/header/Ecuador.png" alt="">
+                            <p>ECUADOR</p>
+                        </a>
+                        <a href="#"><img src="imgs/header/Guatemala.png" alt="">
+                            <p>GUATEMALA</p>
+                        </a>
+                        <a href="#"><img src="imgs/header/Peru.png" alt="">
+                            <p>COSTA RICA</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="follow">
+                    <p>SÍGUENOS</p>
+                    <a a rel="nofollow" href="https://www.instagram.com/?hl=es-la" target="_blank" class="social">
+                        <img src="imgs/header/instagram.png" alt="instagram">
+                    </a>
+                    <a a rel="nofollow" href="https://www.facebook.com/" target="_blank" class="social">
+                        <img src="imgs/header/facebook.png" alt="facebook">
+                    </a>
+                </div>
+                <div class="legal-mob">
+                    <a href="terminos.html">Políticas de Privacidad</a>
+                    <a href="terminos.html">Términos y Condiciones</a>
+                    <a href="contacto.html">Contáctenos</a>
+                </div>
+            </nav>
+            <div class="registry">
+                <a href="javascript:void(0)" class="register" onclick="openRegister()">REGISTRO</a>
+                <a a rel="nofollow" href="https://www.instagram.com/?hl=es-la" target="_blank" class="social">
+                    <img src="imgs/header/instagram.png" alt="instagram">
+                </a>
+                <a a rel="nofollow" href="https://www.facebook.com/" target="_blank" class="social">
+                    <img src="imgs/header/facebook.png" alt="facebook">
+                </a>
+                <a href="javascript:void(0)" class="country" onclick="openCountryD()">PAÍS <img src="imgs/header/down-arrow.png" alt="down arrow"></a>
+            </div>
+            <div class="registry-mob" onclick="openRegister()">
+                <a class="register">REGISTRO</a>
+            </div>
+            <a href="javascript:void(0)" class="menu-ham" onclick="openMenu()">
+                <img src="imgs/header/ham.png" alt="menu-ham" id="menu-ham">
+            </a>
+        </div>
+        <div class="country-block-d">
+            <div class="country-list-d">
+                <a href="#" class="country-name"><img src="imgs/header/Colombia.png" alt="">
+                    <p>COLOMBIA</p>
+                </a>
+                <a href="#"><img src="imgs/header/Guatemala.png" alt="">
+                    <p>GUATEMALA</p>
+                </a>
+            </div>
+            <div class="country-list-d">
+                <a href="#"><img src="imgs/header/Ecuador.png" alt="">
+                    <p>ECUADOR</p>
+                </a>
+                <a href="#"><img src="imgs/header/Salvador.png" alt="">
+                    <p>EL SALVADOR</p>
+                </a>
+            </div>
+            <div class="country-list-d">
+                <a href="#"><img src="imgs/header/RepDom.png" alt="">
+                    <p>R. DOM.</p>
+                </a>
+                <a href="#"><img src="imgs/header/Peru.png" alt="">
+                    <p>COSTA RICA</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="menpos">
+        <div class="contactform">
+            <div class="contactbox">
+                <div class="contactinner">
+                    <h1>CONTACTO</h1>
+                    <form action="" class="contact" name="contactForm" id="contactForm">
+                        <div class="inputscontact">
+                            <div class="singleinputcontact">
+                                <label class="textfieldcontact">
+                                    <input placeholder=" " name="name" id="contactName">
+                                    <span>Nombre*</span>
+                                    <p class="errormesagecontact">&nbsp;</p>
+                                </label>
+                            </div>
+                            <div class="singleinputcontact">
+                                <label class="textfieldcontact">
+                                    <input placeholder=" " name="lastname" id="contactLastname">
+                                    <span>Apellido*</span>
+                                    <p class="errormesagecontact">&nbsp;</p>
+                                </label>
+                            </div>
+                            <div class="singleinputcontact">
+                                <label class="textfieldcontact">
+                                    <input placeholder=" " name="email" id="contactEmail">
+                                    <span>Email*</span>
+                                    <p class="errormesagecontact">&nbsp;</p>
+                                </label>
+                            </div>
+                            <div class="singleinputcontact">
+                                <label class="textfieldcontact">
+                                    <input placeholder=" " type="number" name="celphone" id="contactCelphone">
+                                    <span>Celular*</span>
+                                    <p class="errormesagecontact">&nbsp;</p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="inputscontact">
+                            <div class="wrapcontact">
+                                <p class="inputtitle">Típo de documento:</p>
+                                <div class="selectcontact">
+                                    <select required name="idtype" id="contactIdtype">
+                                        <option value="" disabled hidden selected></option>
+                                        <option value="CedulaC">Cédula de ciudadadnía</option>
+                                        <option value="CedulaE">Cédula de extranhería</option>
+                                    </select>
+                                    <span class="select-label">Selecciona*</span>
+                                </div>
+                                <p class="errorselectcontact">&nbsp;</p>
+                            </div>
+                            <div class="singleinputcontact">
+                                <label class="textfieldcontact">
+                                    <input placeholder=" " type="number" name="idnumber" id="contactIdnumber">
+                                    <span>Número de documento*</span>
+                                    <p class="errormesagecontact">&nbsp;</p>
+                                </label>
+                            </div>
+                            <div class="wrapcontact">
+                                <p class="inputtitle">¿En qué podemos ayudarte?</p>
+                                <div class="selectcontact">
+                                    <select required name="help" id="help">
+                                        <option value="" disabled hidden selected></option>
+                                        <option value="Option1">Option 1</option>
+                                        <option value="Option2">Option 2</option>
+                                        <option value="Option3">Option 3</option>
+                                    </select>
+                                    <span class="select-label">Selecciona*</span>
+                                </div>
+                                <p class="errorselectcontact">&nbsp;</p>
+                            </div>
+                        </div>
+                        <div class="inputscontact">
+                            <label class="areatextfieldcontact">
+                                <p class="inputtitle">Descripción:</p>
+                                <textarea placeholder="Escribe..." name="comment" id="comment"></textarea>
+                                <p class="errorcomment">&nbsp;</p>
+                            </label>
+                        </div>
+                        <div class="checkContact">
+                            <div class="checkContactterms">
+                                <input type="checkbox" name="terms" id="tycContact" value="Acepto">
+                                <label for="tycContact">Acepto <a href="terminos.html">términos y condiciones</a> y las <a href="terminos.html">políticas de tratamiento de datos*</a></label>
+                            </div>
+                        </div>
+                        <button type="submit" form="contactForm" onclick="return validateContactForm()">ENVIAR > </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="splash"><img src="imgs/home/splash.png" alt=""></div>
+    </section>
+
+
+    <section class="registry-form">
+        <div class="alert-mob">
+            <div class="back-mob back-reg">
+                <a href=""><img src="imgs/home/left-arrow.png" alt=""></a>
+            </div>
+            <p> <img src="imgs/header/alert-icon.png" alt=""> ¡Por favor regístrese antes de comprar!</p>
+        </div>
+        <div class="registry-container">
+            <div class="registry-inner">
+                <div>
+                    <div class="registry-alert">
+                        <p> <img src="imgs/header/alert-icon.png" alt=""> ¡Por favor regístrese antes de comprar!</p>
+                        <div class="close-reg">
+                            <a onclick="closeReg()"><img src="imgs/symptoms/close-icon.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="formulary">
+                        <h1>REGISTRO</h1>
+                        <p>con su red social</p>
+                        <div class="social-reg">
+                            <a href="">
+                                <img src="imgs/header/google-icon.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="imgs/header/facebook-icon.png" alt="">
+                            </a>
+                        </div>
+                        <form action="" name="registryForm" id="registryForm" class="form-reg" autocomplete="off">
+                            <div class="inputs">
+                                <div class="singleinput">
+                                    <label class="textfield">
+                                        <input placeholder=" " name="name" id="name">
+                                        <span>Nombre*</span>
+                                        <p class="errormesage">&nbsp;</p>
+                                    </label>
+                                </div>
+                                <div class="singleinput">
+                                    <label class="textfield">
+                                        <input placeholder=" " name="lastname" id="lastname">
+                                        <span>Apellido*</span>
+                                        <p class="errormesage">&nbsp;</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="inputs selectinp">
+                                <div class="wrap">
+                                    <div class="select">
+                                        <select class="select-text" required name="gender" id="gender">
+                                            <option value="" disabled hidden selected></option>
+                                            <option value="female">Mujer</option>
+                                            <option value="male">Hombre</option>
+                                            <option value="other">Otro</option>
+                                        </select>
+                                        <span class="select-label">Seleccionar Género</span>
+                                    </div>
+                                    <p id="errorgender">&nbsp;</p>
+                                </div>
+                            </div>
+                            <div class="reg-idType">
+                                <div class="inputs">
+                                    <p>Típo de documento:</p>
+                                    <div>
+                                        <div class="idtype">
+                                            <input type="radio" name="idtype" id="CC" value="CedulaC">
+                                            <span class="idspan"><img src="imgs/header/id-icon.png" alt="">Cédula de ciudadanía</span>
+                                        </div>
+                                        <div class="idtype">
+                                            <input type="radio" name="idtype" id="CE" value="CedulaE">
+                                            <span class="idspan"><img src="imgs/header/id-icon.png" alt="">Cédula de extranjería</span>
+                                        </div>
+                                    </div>
+                                    <p id="erroridtype">&nbsp;</p>
+                                </div>
+                            </div>
+                            <div class="inputs">
+                                <label class="textfield" id="numberid">
+                                    <input placeholder=" " type="number" name="idnumber" id="idnumber">
+                                    <span>Número de documento*</span>
+                                    <p class="errormesage">&nbsp;</p>
+                                </label>
+                            </div>
+                            <div class="inputs">
+                                <div class="singleinput">
+                                    <label class="textfield">
+                                        <input placeholder=" " name="email" id="email">
+                                        <span>Email*</span>
+                                        <p class="errormesage">&nbsp;</p>
+                                    </label>
+                                </div>
+                                <div class="singleinput">
+                                    <label class="textfield">
+                                        <input placeholder=" " type="number" name="celphone" id="celphone">
+                                        <span>Celular*</span>
+                                        <p class="errormesage">&nbsp;</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="check-reg">
+                                <div class="checkterms">
+                                    <input type="checkbox" name="terms" id="tyc" value="Acepto">
+                                    <label for="tyc">Acepto <a href="terminos.html">términos y condiciones</a> y las <a href="terminos.html">políticas de tratamiento de datos*</a></label>
+                                </div>
+                            </div>
+                            <button type="submit" form="registryForm" id="register" onclick="return validateForm()">REGISTRARSE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <a href="terminos.html"><strong>Políticas de Privacidad</strong></a>
+            <a href="terminos.html"><strong>Términos y Condiciones</strong></a>
+            <a href="contacto.html"><strong>Contáctenos</strong></a>
+            <span><strong>Todos los derechos reservados Sal de Frutas LUA</strong></span>
+        </div>
+        <span class="footer-mob">Todos los derechos reservados Sal de Frutas LUA</span>
+        <p>Indicado para la indigestión, pesadez, llenura, distensión abdominal y gases. Es un medicamento, no exceder su consumo. Leer indicaciones y contraindicaciones en el empaque. Si los síntomas persisten consulte con su médico. Medicamento de venta
+            libre. Reg. San. Invima 2018m-0013340-r1</p>
+    </footer>
+
+    <script src="js/header.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/register.js"></script>
+</body>
+
+</html>

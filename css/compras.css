@@ -1,0 +1,262 @@
+#first-mob {
+    display: none;
+}
+
+.buy-section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 85%;
+    margin-top: 1em;
+    margin-bottom: 140px;
+    color: #ffffff;
+    font-family: 'BebasN';
+    background-color: rgba(5, 31, 79, 0.6);
+}
+
+.back {
+    margin: 1.5em;
+    margin-bottom: 0;
+}
+
+.back a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Dinnex-BC';
+    font-size: 1.1em;
+}
+
+.main-grid {
+    padding-left: 7em;
+    padding-right: 4em;
+}
+
+.main-grid h1 {
+    font-size: 3.1em;
+    letter-spacing: 3px;
+    margin: 0.2em 0;
+}
+
+.main-grid p {
+    margin: 0;
+    font-family: 'Dinnex-R';
+    font-size: 1.2em;
+}
+
+.main-grid h3 {
+    font-size: 2em;
+    letter-spacing: 1px;
+}
+
+.logos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5em;
+}
+
+.buy-logo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    background: #ffffff;
+    border-radius: 1em;
+    align-items: center;
+    width: 18.3%;
+    justify-content: flex-end;
+}
+
+.buy-logo:nth-of-type(5n) {
+    margin-right: 0;
+}
+
+.buy-logo img {
+    max-width: 100%;
+    height: auto;
+    padding: 0.7em 0;
+    margin: auto;
+}
+
+.buy-logo a {
+    text-decoration: none;
+    border: 1px solid #000d40;
+    padding: 0.4em 0.5em 0.2em;
+    margin-bottom: 1em;
+    font-family: 'Dinnex-R';
+    font-size: 1.3em;
+    color: #000d40;
+    border-radius: 5px;
+}
+
+.buy-logo:hover>.buy {
+    background: linear-gradient(90deg, rgba(209, 189, 111, 1) 10%, rgba(237, 236, 206, 1) 50%, rgba(217, 164, 54, 1) 85%);
+    border: transparent;
+    border: none;
+}
+
+@media screen and (max-width: 1440px) {
+    .main-grid {
+        padding-left: 4em;
+        padding-right: 2em;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .buy-logo {
+        width: 23%;
+    }
+    .buy-logo:nth-of-type(5n) {
+        margin-right: 1em;
+    }
+    .buy-logo:nth-of-type(4n) {
+        margin-right: 0;
+    }
+    .buy-logo a {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-grid {
+        padding-left: 3em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .buy-main {
+        flex-direction: column;
+    }
+    #first-mob {
+        display: block;
+        padding-top: 1em;
+    }
+    #mob-title {
+        display: block;
+        text-align: center;
+        font-size: 4.5em;
+        letter-spacing: 5px;
+        color: #082457;
+        font-family: 'BebasN';
+        margin-top: 0.3em;
+        margin-bottom: -0.4em;
+        position: relative;
+        top: -0.7em;
+    }
+    .back-mob {
+        background: #05204f;
+        padding: 1em;
+        width: fit-content;
+    }
+    .back-mob img {
+        width: 20px;
+    }
+    .buy-section {
+        margin-bottom: 14em;
+    }
+    .main-grid h1,
+    .back {
+        display: none;
+    }
+    .main-grid h3 {
+        font-size: 1.5em;
+    }
+    .main-grid p {
+        margin-top: 3em;
+        margin-right: 1em;
+        font-size: 1em;
+    }
+    .buy-logo {
+        width: 31%;
+    }
+    .buy-logo:nth-of-type(4n) {
+        margin-right: 1em;
+    }
+    .buy-logo:nth-of-type(3n) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .back-mob {
+        padding: 0.5em;
+    }
+    .back-mob img {
+        width: 25px;
+    }
+    #mob-title {
+        font-size: 3.5em;
+    }
+    .main-grid {
+        padding-left: 2em;
+        padding-right: 1em;
+    }
+    .buy-section {
+        width: 85%;
+    }
+    .buy-logo {
+        width: 42%;
+        padding: 0 0.5em;
+    }
+    .buy-logo:nth-of-type(3n) {
+        margin-right: 1em;
+    }
+    .buy-logo:nth-of-type(2n) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .buy-section {
+        margin-bottom: 9em;
+    }
+}
+
+@media screen and (max-width: 525px) {
+    #mob-title {
+        font-size: 3.5em;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #mob-title {
+        font-size: 2.5em;
+    }
+    .back-mob img {
+        width: 20px;
+    }
+    .main-grid {
+        padding-left: 1.3em;
+    }
+    .buy-section {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .back-mob img {
+        width: 15px;
+    }
+    #mob-title {
+        font-size: 2em;
+    }
+    .main-grid {
+        padding-left: 1em;
+    }
+    .buy-section {
+        width: 95%;
+    }
+    .main-grid p {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .buy-logo {
+        width: 41%;
+        padding: 0 0.5em;
+    }
+    .buy-logo a {
+        font-size: 0.9em;
+    }
+    .buy-section {
+        margin-bottom: 6em;
+    }
+}

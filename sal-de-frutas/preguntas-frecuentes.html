@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/preguntas-frecuentes.css">
+    <link rel="stylesheet" href="css/compras.css">
+    <link rel="stylesheet" href="css/registro.css">
+    <title>Document</title>
+    <meta name="description" content="Meta description">
+    <link rel="canonical" href="URL_HERE"/>
+    <link rel="alternate" href="URL_HERE" hreflang="es"/>
+    <meta name="Keywords" content="KEYWORDS"/>
+    <meta property="og:type" content="TYPE_HERE" />
+    <meta property="og:title" content="TITLE HERE" />
+    <meta property="og:url" content="URL_HERE" />
+    <meta property="og:image" content="URL_HERE" />
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="logo">
+                <a a rel="nofollow" href="https://www.tqconfiable.com/" id="tq-logo">
+                    <img src="imgs/header/tq-logo.png" alt="tq-logo">
+                </a>
+                <a href="index.html" id="sfl-logo">
+                    <img src="imgs/header/sfl-logo.png" alt="sfl-logo">
+                </a>
+            </div>
+            <nav class="menu-list">
+                <a href="index.html">HOME</a>
+                <a href="productos.html">PRODUCTOS</a>
+                <a href="sintomas.html">SÍNTOMAS</a>
+                <a href="preguntas-frecuentes.html" class="menu-act">PREGUNTAS FRECUENTES</a>
+                <a href="comprar.html">COMPRAR</a>
+                <hr>
+                <a href="javascript:void(0)" class="country-nav" onclick="openCountry()">PAÍS<img src="imgs/header/down-arrow.png" alt="down arrow"></a>
+                <div class="country-block">
+                    <div class="country-list">
+                        <a href="#"><img src="imgs/header/Colombia.png" alt="">
+                            <p>COLOMBIA</p>
+                        </a>
+                        <a href="#"><img src="imgs/header/RepDom.png" alt="">
+                            <p>R. DOM.</p>
+                        </a>
+                        <a href="#"><img src="imgs/header/Salvador.png" alt="">
+                            <p>EL SALVADOR</p>
+                        </a>
+                    </div>
+                    <div class="country-list">
+                        <a href="#"><img src="imgs/header/Ecuador.png" alt="">
+                            <p>ECUADOR</p>
+                        </a>
+                        <a href="#"><img src="imgs/header/Guatemala.png" alt="">
+                            <p>GUATEMALA</p>
+                        </a>
+                        <a href="#"><img src="imgs/header/Peru.png" alt="">
+                            <p>COSTA RICA</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="follow">
+                    <p>SÍGUENOS</p>
+                    <a a rel="nofollow" href="https://www.instagram.com/?hl=es-la" target="_blank" class="social">
+                        <img src="imgs/header/instagram.png" alt="instagram">
+                    </a>
+                    <a a rel="nofollow" href="https://www.facebook.com/" target="_blank" class="social">
+                        <img src="imgs/header/facebook.png" alt="facebook">
+                    </a>
+                </div>
+                <div class="legal-mob">
+                    <a href="terminos.html">Políticas de Privacidad</a>
+                    <a href="terminos.html">Términos y Condiciones</a>
+                    <a href="contacto.html">Contáctenos</a>
+                </div>
+            </nav>
+            <div class="registry">
+                <a href="javascript:void(0)" class="register" onclick="openRegister()">REGISTRO</a>
+                <a a rel="nofollow" href="https://www.instagram.com/?hl=es-la" target="_blank" class="social">
+                    <img src="imgs/header/instagram.png" alt="instagram">
+                </a>
+                <a a rel="nofollow" href="https://www.facebook.com/" target="_blank" class="social">
+                    <img src="imgs/header/facebook.png" alt="facebook">
+                </a>
+                <a href="javascript:void(0)" class="country" onclick="openCountryD()">PAÍS <img src="imgs/header/down-arrow.png" alt="down arrow"></a>
+            </div>
+            <div class="registry-mob" onclick="openRegister()">
+                <a class="register">REGISTRO</a>
+            </div>
+            <a href="javascript:void(0)" class="menu-ham" onclick="openMenu()">
+                <img src="imgs/header/ham.png" alt="menu-ham" id="menu-ham">
+            </a>
+        </div>
+        <div class="country-block-d">
+            <div class="country-list-d">
+                <a href="#" class="country-name"><img src="imgs/header/Colombia.png" alt="">
+                    <p>COLOMBIA</p>
+                </a>
+                <a href="#"><img src="imgs/header/Guatemala.png" alt="">
+                    <p>GUATEMALA</p>
+                </a>
+            </div>
+            <div class="country-list-d">
+                <a href="#"><img src="imgs/header/Ecuador.png" alt="">
+                    <p>ECUADOR</p>
+                </a>
+                <a href="#"><img src="imgs/header/Salvador.png" alt="">
+                    <p>EL SALVADOR</p>
+                </a>
+            </div>
+            <div class="country-list-d">
+                <a href="#"><img src="imgs/header/RepDom.png" alt="">
+                    <p>R. DOM.</p>
+                </a>
+                <a href="#"><img src="imgs/header/Peru.png" alt="">
+                    <p>COSTA RICA</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="faq menpos">
+        <div class="faq-main">
+            <h1>¿CÓMO PODEMOS AYUDARTE?</h1>
+            <form action="" class="search">
+                <button><img src="imgs/faq/search-icon.png" alt=""></button>
+                <input type="text" name="search" id="search" placeholder="Escribe tu pregunta">
+            </form>
+            <div class="faq-list">
+                <div class="faq-element">
+                    <a class="question" onclick="openFaq(0)">
+                        <p>¿Cuál es la ventaja de tomar productos de Sal de Frutas LUA polvo efervescente para aliviar malestares estomacales en lugar de tabletas efervescentes?</p>
+                        <img src="imgs/faq/down-arrow.png" alt="" class="arrow">
+                    </a>
+                    <div class="answer d-none">
+                        <p>Porque el polvo efervescente se disuelve mucho más rápido, inclusive con agua fría.</p>
+                    </div>
+
+                </div>
+                <div class="faq-element">
+                    <a class="question" onclick="openFaq(1)">
+                        <p>¿Cuál es la diferencia entre Sal de Frutas LUA original y el nuevo Sal de Frutas LUA Plus?</p>
+                        <img src="imgs/faq/down-arrow.png" alt="" class="arrow">
+                    </a>
+                    <div class="answer d-none">
+                        <p>SFL tiene la capacidad de aliviar la indigestión, pesadez y llenura mientras que Sal de Frutas LUA Plus te brinda un alivio más completo, pues además de aliviar la indigestión, pesadez y llenura, elimina los gases intestinales
+                            y el estómago inflado.</p>
+                    </div>
+                </div>
+                <div class="faq-element">
+                    <a class="question" onclick="openFaq(2)">
+                        <p>¿Cuáles son los beneficios de los microgránulos activos que tiene el nuevo Sal de Frutas LUA Plus?</p>
+                        <img src="imgs/faq/down-arrow.png" alt="" class="arrow">
+                    </a>
+                    <div class="answer d-none">
+                        <p>Gracias a su fórmula avanzada con microgránulos activos que se disuelven en tú estómago, te da un más completo y rápido alivio de la indigestión, pesadez, llenura, estómago inflamado y gases intestinales.</p>
+                    </div>
+                </div>
+                <div class="faq-element">
+                    <a class="question" onclick="openFaq(3)">
+                        <p>¿Sal de Frutas LUA tiene diferentes sabores?</p>
+                        <img src="imgs/faq/down-arrow.png" alt="" class="arrow">
+                    </a>
+                    <div class="answer d-none">
+                        <p>Sí, además del sabor original, tiene un refrescante sabor a limón.</p>
+                    </div>
+                </div>
+                <div class="faq-element">
+                    <a class="question" onclick="openFaq(4)">
+                        <p>¿Por qué los productos de Sal de Frutas LUA no contienen analgésicos?</p>
+                        <img src="imgs/faq/down-arrow.png" alt="" class="arrow">
+                    </a>
+                    <div class="answer d-none">
+                        <p>Porque desde el inicio de su formulación se pensó únicamente en darle el mayor beneficio posible al estómago utilizando la menor cantidad de fármacos disponibles.</p>
+                    </div>
+                </div>
+                <div class="faq-element">
+                    <a class="question" onclick="openFaq(5)">
+                        <p>¿Puedo disolver los productos de Sal de Frutas LUA en agua fría?</p>
+                        <img src="imgs/faq/down-arrow.png" alt="" class="arrow">
+                    </a>
+                    <div class="answer d-none">
+                        <p>Sí, es posible hacerlo sin afectar la velocidad de disolución.</p>
+                    </div>
+                </div>
+                <div class="faq-element">
+                    <a class="question" onclick="openFaq(6)">
+                        <p>¿Puedo usar los productos Sal de Frutas LUA si estoy embarazada o amamantando?</p>
+                        <img src="imgs/faq/down-arrow.png" alt="" class="arrow">
+                    </a>
+                    <div class="answer d-none">
+                        <p>Si, dado que no contiene analgésicos que están contraindicados en el embarazo.</p>
+                    </div>
+                </div>
+                <div class="faq-element">
+                    <a class="question" onclick="openFaq(7)">
+                        <p>¿Los niños pueden consumir productos Sal de Frutas LUA?</p>
+                        <img src="imgs/faq/down-arrow.png" alt="" class="arrow">
+                    </a>
+                    <div class="answer d-none">
+                        <p>Sí, la dosis para Niños mayores de 12 años es un sobre diluido en medio vaso con agua, 20 a 60 minutos después de las comidas.</p>
+                    </div>
+                </div>
+                <div class="faq-element">
+                    <a class="question" onclick="openFaq(8)">
+                        <p>¿Los productos Sal de Frutas LUA tienen contraindicaciones?</p>
+                        <img src="imgs/faq/down-arrow.png" alt="" class="arrow">
+                    </a>
+                    <div class="answer d-none">
+                        <p>Todos los medicamentos tienen contraindicaciones, pero estas son para personas con síntomas muy especiales y se presentan en un número muy limitado de pacientes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="splash"><img src="imgs/home/splash.png" alt=""></div>
+    </section>
+    <section class="registry-form">
+        <div class="alert-mob">
+            <div class="back-mob back-reg">
+                <a href=""><img src="imgs/home/left-arrow.png" alt=""></a>
+            </div>
+            <p> <img src="imgs/header/alert-icon.png" alt=""> ¡Por favor regístrese antes de comprar!</p>
+        </div>
+        <div class="registry-container">
+            <div class="registry-inner">
+                <div>
+                    <div class="registry-alert">
+                        <p> <img src="imgs/header/alert-icon.png" alt=""> ¡Por favor regístrese antes de comprar!</p>
+                        <div class="close-reg">
+                            <a onclick="closeReg()"><img src="imgs/symptoms/close-icon.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="formulary">
+                        <h1>REGISTRO</h1>
+                        <p>con su red social</p>
+                        <div class="social-reg">
+                            <a href="">
+                                <img src="imgs/header/google-icon.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="imgs/header/facebook-icon.png" alt="">
+                            </a>
+                        </div>
+                        <form action="" name="registryForm" id="registryForm" class="form-reg" autocomplete="off">
+                            <div class="inputs">
+                                <div class="singleinput">
+                                    <label class="textfield">
+                                        <input placeholder=" " name="name" id="name">
+                                        <span>Nombre*</span>
+                                        <p class="errormesage">&nbsp;</p>
+                                    </label>
+                                </div>
+                                <div class="singleinput">
+                                    <label class="textfield">
+                                        <input placeholder=" " name="lastname" id="lastname">
+                                        <span>Apellido*</span>
+                                        <p class="errormesage">&nbsp;</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="inputs selectinp">
+                                <div class="wrap">
+                                    <div class="select">
+                                        <select class="select-text" required name="gender" id="gender">
+                                            <option value="" disabled hidden selected></option>
+                                            <option value="female">Mujer</option>
+                                            <option value="male">Hombre</option>
+                                            <option value="other">Otro</option>
+                                        </select>
+                                        <span class="select-label">Seleccionar Género</span>
+                                    </div>
+                                    <p id="errorgender">&nbsp;</p>
+                                </div>
+                            </div>
+                            <div class="reg-idType">
+                                <div class="inputs">
+                                    <p>Típo de documento:</p>
+                                    <div>
+                                        <div class="idtype">
+                                            <input type="radio" name="idtype" id="CC" value="CedulaC">
+                                            <span class="idspan"><img src="imgs/header/id-icon.png" alt="">Cédula de ciudadanía</span>
+                                        </div>
+                                        <div class="idtype">
+                                            <input type="radio" name="idtype" id="CE" value="CedulaE">
+                                            <span class="idspan"><img src="imgs/header/id-icon.png" alt="">Cédula de extranjería</span>
+                                        </div>
+                                    </div>
+                                    <p id="erroridtype">&nbsp;</p>
+                                </div>
+                            </div>
+                            <div class="inputs">
+                                <label class="textfield" id="numberid">
+                                    <input placeholder=" " type="number" name="idnumber" id="idnumber">
+                                    <span>Número de documento*</span>
+                                    <p class="errormesage">&nbsp;</p>
+                                </label>
+                            </div>
+                            <div class="inputs">
+                                <div class="singleinput">
+                                    <label class="textfield">
+                                        <input placeholder=" " name="email" id="email">
+                                        <span>Email*</span>
+                                        <p class="errormesage">&nbsp;</p>
+                                    </label>
+                                </div>
+                                <div class="singleinput">
+                                    <label class="textfield">
+                                        <input placeholder=" " type="number" name="celphone" id="celphone">
+                                        <span>Celular*</span>
+                                        <p class="errormesage">&nbsp;</p>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="check-reg">
+                                <div class="checkterms">
+                                    <input type="checkbox" name="terms" id="tyc" value="Acepto">
+                                    <label for="tyc">Acepto <a href="terminos.html">términos y condiciones</a> y las <a href="terminos.html">políticas de tratamiento de datos*</a></label>
+                                </div>
+                            </div>
+                            <button type="submit" form="registryForm" id="register" onclick="return validateForm()">REGISTRARSE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <a href="terminos.html"><strong>Políticas de Privacidad</strong></a>
+            <a href="terminos.html"><strong>Términos y Condiciones</strong></a>
+            <a href="contacto.html"><strong>Contáctenos</strong></a>
+            <span><strong>Todos los derechos reservados Sal de Frutas LUA</strong></span>
+        </div>
+        <span class="footer-mob">Todos los derechos reservados Sal de Frutas LUA</span>
+        <p>Indicado para la indigestión, pesadez, llenura, distensión abdominal y gases. Es un medicamento, no exceder su consumo. Leer indicaciones y contraindicaciones en el empaque. Si los síntomas persisten consulte con su médico. Medicamento de venta
+            libre. Reg. San. Invima 2018m-0013340-r1</p>
+    </footer>
+    <script src="js/header.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/register.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+.terms-section {
+    background: #f7f9f9;
+    height: auto;
+    position: absolute;
+    top: 6em;
+    z-index: -1;
+}
+
+.terms {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 2em 6%;
+    background: #ffffff;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+}
+
+.terms h1 {
+    font-family: 'BebasN';
+    color: #082457;
+    font-size: 3em;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.terms-text {
+    margin: 2em 6%;
+    margin-top: 0;
+    font-family: 'Dinnex-R';
+    color: #011f52;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+ol {
+    padding-left: 1em;
+}
+
+ul {
+    padding-left: 1em;
+    list-style: disc;
+}
+
+@media screen and (max-width: 1440px) {
+    .terms-text {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .terms-section {
+        background: #ffffff;
+    }
+    .terms {
+        border: none;
+        background: #ffffff;
+        margin: auto;
+    }
+    .terms h1 {
+        font-size: 2em;
+        font-family: 'Dinnex-R';
+    }
+    .terms-text {
+        font-size: 1.1em;
+        margin: auto 10%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .terms-section {
+        top: 5em;
+    }
+    .terms h1 {
+        font-size: 1.3em;
+        margin: 0.67em 2em;
+    }
+    .terms-text {
+        font-size: 1em;
+    }
+    .terms-text h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .terms h1 {
+        margin: 0.67em 1em;
+    }
+    .terms-text {
+        margin: auto 5%;
+        font-size: 0.8em;
+    }
+    .terms h1 {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .terms h1 {
+        font-size: 1em;
+    }
+    .terms-text {
+        font-size: 0.7em;
+    }
+}

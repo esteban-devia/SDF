@@ -1,0 +1,530 @@
+.symptomsgrid {
+    position: fixed;
+    z-index: -1;
+}
+
+.symptomsgrid h1 {
+    margin: 0;
+    font-family: 'BebasN';
+    font-size: 14.4em;
+    letter-spacing: 40px;
+    color: rgba(255, 255, 255, 0.1);
+    position: fixed;
+    top: 0.5em;
+    right: 0em;
+    z-index: -1;
+}
+
+.cards {
+    display: flex;
+    margin-top: 10%;
+    justify-content: flex-end;
+    width: 110vw;
+    transition: margin-left 1s, margin-top 1s;
+    transition-delay: 0.5s;
+}
+
+.carditem {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.2em;
+    width: 17%;
+    height: auto;
+    cursor: pointer;
+}
+
+.carditem:last-of-type {
+    margin-right: 0;
+}
+
+.cardimg img {
+    width: 100%;
+}
+
+.cardtitle {
+    background: #ffffff;
+    text-align: center;
+    font-family: 'BebasN';
+    letter-spacing: 3px;
+    font-size: 1.3em;
+    font-weight: 700;
+    position: relative;
+    bottom: 0.5em;
+    padding: 0.5em 0;
+    cursor: pointer;
+}
+
+.cardtitle:hover {
+    background: linear-gradient(90deg, rgba(209, 189, 111, 1) 10%, rgba(237, 236, 206, 1) 50%, rgba(217, 164, 54, 1) 85%);
+}
+
+.cardtitle a {
+    color: #001253;
+}
+
+.symptom {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    background: rgba(5, 32, 79, 0.4);
+    backdrop-filter: blur(8px);
+    z-index: 1;
+    display: none;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.symp-second {
+    margin: 0 9%;
+}
+
+.symp-desc {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2em;
+}
+
+.close-symp {
+    display: inline-flex;
+    position: relative;
+    bottom: -1em;
+}
+
+.close-symp a {
+    background: #051f4f;
+    width: fit-content;
+}
+
+.close-symp img {
+    width: 30px;
+    padding: 0.5em;
+}
+
+.symp-desc-second {
+    display: flex;
+    align-items: center;
+    margin-right: -7em;
+}
+
+.description-text {
+    padding: 1em 13em 3em 4em;
+    background-color: rgba(5, 31, 79, 0.8);
+    border-left: 5px solid;
+    border-image-source: linear-gradient(0deg, rgba(209, 189, 111, 1) 10%, rgba(237, 236, 206, 1) 50%, rgba(217, 164, 54, 1) 85%);
+    border-image-slice: 1;
+    height: 27em;
+}
+
+.description-text h1 {
+    display: block;
+    font-family: 'BebasN';
+    color: #ffffff;
+    font-size: 5.1em;
+    letter-spacing: 5px;
+    line-height: 1em;
+    margin: 0.5em 0;
+}
+
+.description-text p {
+    font-family: 'Dinnex-L';
+    color: #ffffff;
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+.symp-img {
+    position: relative;
+    right: 8em;
+    height: 350px;
+}
+
+.symp-cta {
+    margin: 0 4em;
+    position: relative;
+    bottom: 1em;
+}
+
+.symp-cta a {
+    background: linear-gradient(90deg, rgba(209, 189, 111, 1) 10%, rgba(237, 236, 206, 1) 50%, rgba(217, 164, 54, 1) 85%);
+    font-family: 'BebasN';
+    font-weight: 700;
+    color: #001253;
+    letter-spacing: 2px;
+    padding: 0.5em 3em 0.3em;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin-right: 3em;
+}
+
+.symp-cta a img {
+    margin-left: 0.5em;
+}
+
+.symp-title,
+.back-symp,
+#title-left,
+#title-right {
+    display: none;
+}
+
+@media screen and (max-width: 1680px) {
+    .close-symp img {
+        width: 20px;
+    }
+    .description-text {
+        height: 23em;
+    }
+    .description-text h1 {
+        font-size: 3.1em;
+    }
+    .description-text p {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .symptomsgrid h1 {
+        top: 0.4em;
+        letter-spacing: 20px;
+    }
+    .symp-second {
+        margin: 0 5%;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .symptomsgrid h1 {
+        font-size: 9.4em;
+        top: 0.7em;
+    }
+    .cards {
+        margin-top: 7.5%;
+    }
+    .cardtitle {
+        font-size: 1em;
+    }
+    .symp-desc-second {
+        margin-right: -8em;
+    }
+    .description-text h1 {
+        font-size: 2.5em;
+    }
+    .description-text p {
+        font-size: 1em;
+    }
+    .symp-img {
+        height: 250px;
+        right: 9em;
+    }
+    .symp-img img {
+        height: 250px
+    }
+    .symp-cta a {
+        font-size: 1.2em;
+        padding: 0.5em 2em 0.3em;
+    }
+    .symp-second {
+        margin: 0 10%;
+    }
+    .description-text {
+        height: 18em;
+    }
+}
+
+@media screen and (max-width: 1112px) {
+    .symptomsgrid h1 {
+        top: 0.9em;
+    }
+    .cards {
+        margin-top: 13%;
+    }
+    .close-symp img {
+        width: 20px;
+    }
+    .description-text {
+        padding-right: 11em;
+    }
+    .description-text h1 {
+        font-size: 2em;
+    }
+    .description-text p {
+        font-size: 0.8em;
+    }
+    .symp-img {
+        height: 200px;
+    }
+    .symp-img img {
+        height: 200px
+    }
+    .symp-cta a {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .symptomsgrid {
+        display: flex;
+        flex-direction: column;
+        position: unset;
+    }
+    .symp-second {
+        margin: 0px 7%;
+    }
+    .symptomsgrid h1 {
+        font-size: 5em;
+        text-align: center;
+        font-family: 'Swiss-BC';
+        color: #082457;
+        margin: 0.5em;
+        position: unset;
+        letter-spacing: 10px;
+    }
+    .cards {
+        width: auto;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+        margin-bottom: 9em;
+    }
+    .carditem {
+        margin-bottom: 1.2em;
+        width: 33%;
+    }
+    .carditem:nth-of-type(2n) {
+        margin-right: 0;
+    }
+    .cardtitle {
+        padding: 0.7em 0;
+        font-size: 1.5em;
+        background: linear-gradient(90deg, rgba(209, 189, 111, 1) 10%, rgba(237, 236, 206, 1) 50%, rgba(217, 164, 54, 1) 85%);
+    }
+    .next.next-symp,
+    .prev.prev-symp,
+    .close-symp {
+        display: none;
+    }
+    .symptom {
+        overflow: hidden;
+        height: auto;
+        position: initial;
+        backdrop-filter: none;
+        z-index: 0;
+        padding-bottom: 7em;
+        z-index: -1;
+    }
+    .slider-symp {
+        align-items: unset;
+        margin-bottom: 1em;
+        margin-top: 10em;
+    }
+    .back-symp {
+        display: flex;
+        position: relative;
+        top: -10em;
+    }
+    .symp-desc {
+        margin: 0;
+        align-items: flex-end;
+    }
+    .symp-second {
+        margin-top: -12em;
+    }
+    .symp-desc-second {
+        margin-top: -4em;
+        flex-direction: column-reverse;
+        margin-right: 0;
+    }
+    .description-text {
+        border: 0;
+        padding: 5em 3em 3em;
+        height: 27em;
+    }
+    .symp-title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #symp-title-h1 {
+        display: block;
+        padding: 0;
+        font-size: 3em;
+        text-align: center;
+    }
+    .description-text h1 {
+        display: none;
+    }
+    .description-text p {
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+    .symp-img {
+        margin: 0 auto;
+        right: 0;
+        top: 4em;
+    }
+    .symp-cta {
+        display: flex;
+        margin: 0;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .symp-cta a {
+        font-size: 1.5em;
+        margin: 0;
+        padding: 0.3em 2em;
+    }
+    #title-left {
+        width: 30px;
+        position: relative;
+        bottom: 60px;
+        left: 40px;
+    }
+    #title-right {
+        position: relative;
+        width: 30px;
+        right: 45px;
+        top: 25px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .symptomsgrid h1 {
+        font-size: 3em;
+        margin: 1em 0;
+    }
+    #title-left {
+        bottom: 35px;
+        left: 30px;
+    }
+    #title-right {
+        right: 35px;
+        top: 25px;
+    }
+    .prod-box img {
+        width: 350px;
+        height: 350px;
+    }
+    .cardtitle {
+        font-size: 1em;
+    }
+    .symp-cta a {
+        font-size: 1.2em;
+        padding: 0.5em 2em;
+    }
+    .slider-symp {
+        margin-top: 8em;
+        margin-bottom: 8em;
+    }
+    .symptom {
+        padding-bottom: 0;
+    }
+    .description-text {
+        height: 22em;
+    }
+    .description-text p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .back-symp {
+        top: -8em;
+    }
+    .symp-second {
+        margin: 0 3%;
+        margin-top: -10em;
+    }
+    .description-text {
+        padding: 5em 2em 3em;
+    }
+    #symp-title-h1 {
+        font-size: 2em;
+    }
+    .symp-img img {
+        height: 175px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .symptomsgrid h1 {
+        letter-spacing: 5px;
+        font-size: 2.5em;
+    }
+    #title-left {
+        bottom: 30px;
+        left: 25px;
+    }
+    #title-right {
+        top: 20px;
+        right: 25px;
+    }
+    .carditem {
+        width: 42%;
+    }
+    .cardtitle {
+        font-size: 0.8em;
+    }
+    .description-text {
+        height: 26em;
+    }
+    .description-text p {
+        font-size: 0.9em;
+    }
+    .symp-cta a {
+        font-size: 1.1em;
+        padding: 0.3em 1em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .symp-cta a {
+        font-size: 1em;
+        padding: 0.5em 1em;
+    }
+    .prev img,
+    .next img {
+        height: 25px;
+    }
+    .description-text {
+        height: 27em;
+    }
+    .description-text p {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .symp-img img {
+        height: 150px;
+    }
+    .description-text {
+        margin-top: -3em;
+    }
+    .prev img,
+    .next img {
+        height: 20px;
+    }
+    #symp-title-h1 {
+        font-size: 1.5em;
+    }
+    .description-text p {
+        font-size: 0.8em;
+        line-height: 1.5em;
+    }
+    .symp-cta a {
+        font-size: 1em;
+    }
+    .symptomsgrid h1 {
+        font-size: 2.3em;
+    }
+    .description-text {
+        height: 25em;
+    }
+    .slider-symp {
+        margin-bottom: 5em;
+    }
+    .cards {
+        margin-bottom: 6em;
+    }
+}
