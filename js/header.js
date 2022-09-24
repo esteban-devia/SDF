@@ -1,3 +1,7 @@
+window.addEventListener("contextmenu", (e) => {
+    e.preventDefault();   
+}
+
 function openMenu() {
     var menu = document.querySelector(".menu-list");
     var mob = document.querySelector(".mob");
