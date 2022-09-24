@@ -1,5 +1,9 @@
-document.addEventListener("contextmenu", function(e) {
-    e.preventDefault();   
+window.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+    console.log(e)
+    if(e.target.localName == "a") {
+        this.open(e.target.href, "_self")
+    }  
 })
 
 function openMenu() {
